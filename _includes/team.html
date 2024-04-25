@@ -1,6 +1,7 @@
 <!-- Team Section -->
 <section id="team" class="bg-light-gray">
     <div class="container">
+        <!-- Section Heading -->
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Team</h2>
@@ -8,19 +9,18 @@
             </div>
         </div>
 
-        <!-- First row with single member -->
+        <!-- First Row: Single Member -->
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-lg-12">
                 <div class="team-member">
                     <img src="img/team/{{ site.people[0].pic }}.jpg" class="img-responsive img-circle" alt="">
                     <h4>{{ site.people[0].name }}</h4>
-                    <p class="text-muted">{{ site.people[0].position }}</p>
+                    <p class="text-muted">{{ site.people[0].job }}</p>
+                    <!-- Social Icons -->
                     <ul class="list-inline social-buttons">
                         {% for network in site.people[0].social %}
                         <li>
-                            <a href="{{ network.url }}">
-                                <i class="fa fa-{{ network.title }}"></i>
-                            </a>
+                            <a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -28,20 +28,19 @@
             </div>
         </div>
 
-        <!-- Second row with three members -->
+        <!-- Second Row: Three Members -->
         <div class="row">
             {% for member in site.people offset:1 limit:3 %}
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <div class="team-member">
                     <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
                     <h4>{{ member.name }}</h4>
-                    <p class="text-muted">{{ member.position }}</p>
+                    <p class="text-muted">{{ member.job }}</p>
+                    <!-- Social Icons -->
                     <ul class="list-inline social-buttons">
                         {% for network in member.social %}
                         <li>
-                            <a href="{{ network.url }}">
-                                <i class="fa fa-{{ network.title }}"></i>
-                            </a>
+                            <a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -50,32 +49,25 @@
             {% endfor %}
         </div>
 
-        <!-- Third row with two members -->
+        <!-- Third Row: Two Members -->
         <div class="row">
-            {% for member in site.people offset:4 limit:2 %}
-            <div class="col-sm-6">
+            {% for member in site.people offset:4 %}
+            <div class="col-md-6">
                 <div class="team-member">
                     <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
                     <h4>{{ member.name }}</h4>
-                    <p class="text-muted">{{ member.position }}</p>
+                    <p class="text-muted">{{ member.job }}</p>
+                    <!-- Social Icons -->
                     <ul class="list-inline social-buttons">
                         {% for network in member.social %}
                         <li>
-                            <a href="{{ network.url }}">
-                                <i class="fa fa-{{ network.title }}"></i>
-                            </a>
+                            <a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
                         </li>
                         {% endfor %}
                     </ul>
                 </div>
             </div>
             {% endfor %}
-        </div>
-
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-            </div>
         </div>
     </div>
 </section>
