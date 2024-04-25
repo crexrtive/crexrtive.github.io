@@ -9,20 +9,9 @@ description: "Write an awesome description for your new site here. You can edit 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Kürşat Çağıltay
   pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
+  job: # Rütbenizi buraya yazınız.
   social:
     - title: twitter
       url: #
@@ -31,16 +20,61 @@ people:
     - title: linkedin
       url: #
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
+- name: Bilgehan Çağıltay
+  pic: 2
+  job: # Rütbenizi buraya yazınız.
   social:
     - title: twitter
       url: #
     - title: facebook
       url: #
-    - title: google-plus
+    - title: linkedin
       url: #
+
+- name: Utku Alkan
+  pic: 3
+  job: # Rütbenizi buraya yazınız.
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Sine Mete
+  pic: 4
+  job: # Rütbenizi buraya yazınız.
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: İdil Kale
+  pic: 5
+  job: # Rütbenizi buraya yazınız.
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Faraz Badali Naghadeh
+  pic: 6
+  job: # Rütbenizi buraya yazınız.
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
