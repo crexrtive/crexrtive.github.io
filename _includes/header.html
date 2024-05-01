@@ -46,11 +46,17 @@
 
 <style>
   .carousel-control.left, .carousel-control.right {
-    top: 0%; 
-    transform: translateY(-50%); 
+    top: 50%; /* Okların dikey olarak ortalanmasını sağlar */
+    transform: translateY(-50%); /* Yatayda merkeze alır */
+    z-index: 2; /* Diğer içeriklerin üzerinde görünmesini sağlar */
+  }
+
+  /* Ayrıca, eğer oklar çok büyük görünüyorsa boyutlarını ayarlamak için ek stiller */
+  .carousel-control {
+    width: 5%; /* Okların genişliğini azaltır */
+    font-size: 20px; /* İkon boyutunu küçültür */
   }
 </style>
-
 
 <!-- Carousel -->
 <div id="hciLabCarousel" class="carousel slide" data-ride="carousel">
