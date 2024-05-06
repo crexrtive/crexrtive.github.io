@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About HCI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ensures the modal content uses all available space */
+        .modal-full {
+            min-width: 100%;
+            margin: 0;
+        }
+
+        .modal-content {
+            height: 100vh; /* Full height */
+            background-color: white; /* White background */
+            color: black; /* Text color */
+            border-radius: 0; /* No border radius */
+            border: none; /* No border */
+        }
+
+        /* Custom styles for the modal header, body, and footer */
+        .modal-header, .modal-body, .modal-footer {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
 <!-- About Section -->
 <section id="services">
     <div class="container">
@@ -10,7 +40,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <p class="text-muted">
-                   Explore the multidisciplinary field of Human-Computer Interaction which merges technology, design, and cognitive science to enhance human interaction with computers.
+                    Explore the multidisciplinary field of Human-Computer Interaction which merges technology, design, and cognitive science to enhance human interaction with computers.
                 </p>
                 <!-- Button to Open the Modal -->
                 <div class="text-center" style="margin-top: 20px;">
@@ -24,11 +54,11 @@
 </section>
 
 <!-- The Modal -->
-<div class="modal fade" id="hciModal" tabindex="-1" role="dialog" aria-labelledby="hciModalLabel" aria-hidden="true" style="padding-right: 0 !important;">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="height: 100vh;">
+<div class="modal fade" id="hciModal" tabindex="-1" role="dialog" aria-labelledby="hciModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-full" role="document">
+        <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 42px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title" id="hciModalLabel">What is Human-Computer Interaction?</h4>
@@ -74,14 +104,16 @@ Weinberg and Shneiderman have published the first book on the subject during the
                    <li>Bailey, S., "Iterative methodology and Designer Training in HCI design", ACM INTERCHI'93.</li>
                </ol>
             </div>
-            <div class="modal-footer">
-                <button type of="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Bootstrap CSS and JS for Modal Functionality -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap and jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
