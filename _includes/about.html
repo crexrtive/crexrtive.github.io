@@ -11,28 +11,23 @@
             min-width: 100%;
             margin: 0;
         }
-
         .modal-content {
-            height: 100vh; /* Full height */
-            background-color: white; /* White background */
-            color: black; /* Text color */
-            border-radius: 0; /* No border radius */
-            border: none; /* No border */
+            height: 100vh;
+            background-color: white;
+            color: black;
+            border-radius: 0;
+            border: none;
         }
-
         .modal-header, .modal-body, .modal-footer {
             padding: 20px;
         }
-
         .timeline-heading h4 {
             margin-top: 0;
         }
-
         .timeline-heading p {
             font-size: 0.85em;
             color: grey;
         }
-
         .more-info {
             font-size: 0.75em;
             text-decoration: underline;
@@ -41,108 +36,108 @@
     </style>
 </head>
 <body>
-<!-- Publications Section -->
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Publications</h2>
-                <h3 class="section-subheading text-muted">Explore our latest research and insights.</h3>
+    <!-- Publications Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Publications</h2>
+                    <h3 class="section-subheading text-muted">Explore our latest research and insights.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <!-- First Publication -->
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="" data-toggle="modal" data-target="#publicationModal1">
+                            </div>
+                            <div class="timeline-panel" data-toggle="modal" data-target="#publicationModal1">
+                                <div class="timeline-heading">
+                                    <h4>The Benefits of Utilizing Augmented Reality as a Tool for Assessments</h4>
+                                    <p>Published on 16/10/2023</p>
+                                    <p class="more-info">Click for more information</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Modal for the first publication -->
+                        <div class="modal fade" id="publicationModal1" tabindex="-1" role="dialog" aria-labelledby="publicationModal1Label" aria-hidden="true">
+                            <div class="modal-dialog modal-full" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="publicationModal1Label">The Benefits of Utilizing Augmented Reality as a Tool for Assessments</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h5>Authors</h5>
+                                        <p>Kevin Ponto, Hande Deniz, Ross Tredinnick, Bilgehan Çağıltay, Rachael Shields, Bryce Sprecher, Beth Fields, Jung-Hye Shin</p>
+                                        <h5>Publication Date</h5>
+                                        <p>2023/10/16</p>
+                                        <h5>Conference</h5>
+                                        <p>2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)</p>
+                                        <h5>Pages</h5>
+                                        <p>393-398</p>
+                                        <h5>Publisher</h5>
+                                        <p>IEEE</p>
+                                        <h5>Description</h5>
+                                        <p>In means of improving the accessibility of performing home assessments, we have developed a novel set of augmented reality (AR) tools. To test the impact of these tools, a user study was run that compares the developed tools against traditional techniques. The findings show that the AR assessment tools generally provide results that are both more accurate and quicker to obtain compared to traditional methods. In addition, participants rated the AR assessment tools as easier to use and were more confident in their assessments compared to when using traditional measures. These results demonstrate that current generation phone-based AR technologies can be utilized as a powerful tool in the assessment process.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type of button="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Second Publication -->
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="" data-toggle="modal" data-target="#publicationModal2">
+                            </div>
+                            <div class="timeline-panel" data-toggle="modal" data-target="#publicationModal2">
+                                <div class="timeline-heading">
+                                    <h4>Typing in the Matrix: An Augmented Reality vs. Physical Keyboard Showdown</h4>
+                                    <p>Published on 24/11/2023</p>
+                                    <p class="more-info">Click for more information</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Modal for the second publication -->
+                        <div class="modal fade" id="publicationModal2" tabindex="-1" role="dialog" aria-labelledby="publicationModal2Label" aria-hidden="true">
+                            <div class="modal-dialog modal-full" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type of button="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="publicationModal2Label">Typing in the Matrix: An Augmented Reality vs. Physical Keyboard Showdown</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h5>Authors</h5>
+                                        <p>Bilgehan Cagiltay, Berfin Surucu, Kaan Atmaca, Nida Kayaduman, Kursat Cagiltay</p>
+                                        <h5>Publication Date</h5>
+                                        <p>2023/11/24</p>
+                                        <h5>Conference</h5>
+                                        <p>2023 IECHCI International Eastern Conference on Human-Computer Interaction</p>
+                                        <h5>Description</h5>
+                                        <p>Explore the comparative effectiveness of augmented reality (AR) keyboard versus physical keyboards in a controlled study. This research aims to assess the efficiency, speed, and user satisfaction in different typing environments, providing crucial insights into the future of human-computer interaction tools in digital workspaces.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type of button="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <ul class="timeline">
-                    <!-- First Publication -->
-                    <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="" data-toggle="modal" data-target="#publicationModal1">
-                        </div>
-                        <div class="timeline-panel" data-toggle="modal" data-target="#publicationModal1">
-                            <div class="timeline-heading">
-                                <h4>The Benefits of Utilizing Augmented Reality as a Tool for Assessments</h4>
-                                <p>Published on 16/10/2023</p>
-                                <p class="more-info">Click for more information</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- Modal for the first publication -->
-                    <div class="modal fade" id="publicationModal1" tabindex="-1" role="dialog" aria-labelledby="publicationModal1Label" aria-hidden="true">
-                        <div class="modal-dialog modal-full" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <h4 class="modal-title" id="publicationModal1Label">The Benefits of Utilizing Augmented Reality as a Tool for Assessments</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <h5>Authors</h5>
-                                    <p>Kevin Ponto, Hande Deniz, Ross Tredinnick, Bilgehan Çağıltay, Rachael Shields, Bryce Sprecher, Beth Fields, Jung-Hye Shin</p>
-                                    <h5>Publication Date</h5>
-                                    <p>2023/10/16</p>
-                                    <h5>Conference</h5>
-                                    <p>2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)</p>
-                                    <h5>Pages</h5>
-                                    <p>393-398</p>
-                                    <h5>Publisher</h5>
-                                    <p>IEEE</p>
-                                    <h5>Description</h5>
-                                    <p>In means of improving the accessibility of performing home assessments, we have developed a novel set of augmented reality (AR) tools. To test the impact of these tools, a user study was run that compares the developed tools against traditional techniques. The findings show that the AR assessment tools generally provide results that are both more accurate and quicker to obtain compared to traditional methods. In addition, participants rated the AR assessment tools as easier to use and were more confident in their assessments compared to when using traditional measures. These results demonstrate that current generation phone-based AR technologies can be utilized as a powerful tool in the assessment process.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Second Publication -->
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/2.jpg" alt="" data-toggle="modal" data-target="#publicationModal2">
-                        </div>
-                        <div class="timeline-panel" data-toggle="modal" data-target="#publicationModal2">
-                            <div class="timeline-heading">
-                                <h4>Typing in the Matrix: An Augmented Reality vs. Physical Keyboard Showdown</h4>
-                                <p>Published on 24/11/2023</p>
-                                <p class="more-info">Click for more information</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- Modal for the second publication -->
-                    <div class="modal fade" id="publicationModal2" tabindex="-1" role="dialog" aria-labelledby="publicationModal2Label" aria-hidden="true">
-                        <div class="modal-dialog modal-full" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" the "close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <h4 class="modal-title" id="publicationModal2Label">Typing in the Matrix: An Augmented Reality vs. Physical Keyboard Showdown</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <h5>Authors</h5>
-                                    <p>Bilgehan Cagiltay, Berfin Surucu, Kaan Atmaca, Nida Kayaduman, Kursat Cagiltay</p>
-                                    <h5>Publication Date</h5>
-                                    <p>2023/11/24</p>
-                                    <h5>Conference</h5>
-                                    <p>2023 IECHCI International Eastern Conference on Human-Computer Interaction</p>
-                                    <h5>Description</h5>
-                                    <p>Explore the comparative effectiveness of augmented reality (AR) keyboard versus physical keyboards in a controlled study. This research aims to assess the efficiency, speed, and user satisfaction in different typing environments, providing crucial insights into the future of human-computer interaction tools in digital workspaces.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" the "btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Bootstrap and jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
