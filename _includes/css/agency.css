@@ -866,3 +866,31 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+.modal-full {
+    width: 100%;
+    margin: 0;
+}
+
+.modal-content {
+    height: 100vh; /* Tam ekran yüksekliği */
+    color: #000; /* Metin rengi */
+    background-color: #fff; /* Arka plan rengi */
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 20px; /* İç boşluk */
+}
+
+.modal-header {
+    background-color: #f7f7f7; /* Header arka plan rengi */
+}
+
+.modal-body {
+    overflow-y: auto; /* İçerik çok fazlaysa kaydırmayı etkinleştir */
+}
+
+.modal-footer {
+    background-color: #f7f7f7; /* Footer arka plan rengi */
+}
+
+
