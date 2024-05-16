@@ -1786,4 +1786,13 @@ body {
 .modal-footer {
     background-color: #f7f7f7; /* Footer arka plan rengi */
 }
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header .close {
+    margin: -1rem -1rem -1rem auto; /* Çarpıyı sağ üst köşeye taşır */
+}
 
