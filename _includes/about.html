@@ -21,6 +21,14 @@
         .modal-header, .modal-body, .modal-footer {
             padding: 20px;
         }
+        .timeline-panel {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .timeline-image {
+            margin-right: 20px;
+        }
         .timeline-heading h4 {
             margin-top: 0;
         }
@@ -32,17 +40,6 @@
             font-size: 0.75em;
             text-decoration: underline;
             cursor: pointer;
-        }
-        .timeline-panel {
-            display: flex;
-            align-items: center;
-        }
-        .timeline-image {
-            flex-shrink: 0;
-            margin-right: 15px;
-        }
-        .timeline-details {
-            flex-grow: 1;
         }
     </style>
 </head>
@@ -61,9 +58,9 @@
                     <ul class="timeline">
                         <!-- First Publication -->
                         <li>
-                            <div class="timeline-panel">
+                            <div class="timeline-panel" data-toggle="modal" data-target="#publicationModal1">
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/1.jpg" alt="" data-toggle="modal" data-target="#publicationModal1">
+                                    <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
                                 </div>
                                 <div class="timeline-details">
                                     <h4>The Benefits of Utilizing Augmented Reality as a Tool for Assessments</h4>
@@ -104,9 +101,9 @@
                         </div>
                         <!-- Second Publication -->
                         <li>
-                            <div class="timeline-panel">
+                            <div class="timeline-panel" data-toggle="modal" data-target="#publicationModal2">
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/2.jpg" alt="" data-toggle="modal" data-target="#publicationModal2">
+                                    <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
                                 </div>
                                 <div class="timeline-details">
                                     <h4>Typing in the Matrix: An Augmented Reality vs. Physical Keyboard Showdown</h4>
@@ -120,7 +117,7 @@
                             <div class="modal-dialog modal-full" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <button type="button" the "close" data-dismiss="modal" aria-label="Close">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         <h4 class="modal-title" id="publicationModal2Label">Typing in the Matrix: An Augmented Reality vs. Physical Keyboard Showdown</h4>
@@ -136,7 +133,20 @@
                                         <p>Explore the comparative effectiveness of augmented reality (AR) keyboard versus physical keyboards in a controlled study. This research aims to assess the efficiency, speed, and user satisfaction in different typing environments, providing crucial insights into the future of human-computer interaction tools in digital workspaces.</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" the "btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
-                            </div
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
