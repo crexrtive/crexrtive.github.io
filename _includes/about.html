@@ -33,6 +33,17 @@
             text-decoration: underline;
             cursor: pointer;
         }
+        .timeline-panel {
+            display: flex;
+            align-items: center;
+        }
+        .timeline-image {
+            flex-shrink: 0;
+            margin-right: 15px;
+        }
+        .timeline-details {
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body>
@@ -50,11 +61,11 @@
                     <ul class="timeline">
                         <!-- First Publication -->
                         <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="" data-toggle="modal" data-target="#publicationModal1">
-                            </div>
-                            <div class="timeline-panel" data-toggle="modal" data-target="#publicationModal1">
-                                <div class="timeline-heading">
+                            <div class="timeline-panel">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/1.jpg" alt="" data-toggle="modal" data-target="#publicationModal1">
+                                </div>
+                                <div class="timeline-details">
                                     <h4>The Benefits of Utilizing Augmented Reality as a Tool for Assessments</h4>
                                     <p>Published on 16/10/2023</p>
                                     <p class="more-info">Click for more information</p>
@@ -86,18 +97,18 @@
                                         <p>In means of improving the accessibility of performing home assessments, we have developed a novel set of augmented reality (AR) tools. To test the impact of these tools, a user study was run that compares the developed tools against traditional techniques. The findings show that the AR assessment tools generally provide results that are both more accurate and quicker to obtain compared to traditional methods. In addition, participants rated the AR assessment tools as easier to use and were more confident in their assessments compared to when using traditional measures. These results demonstrate that current generation phone-based AR technologies can be utilized as a powerful tool in the assessment process.</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type of button="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Second Publication -->
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="" data-toggle="modal" data-target="#publicationModal2">
-                            </div>
-                            <div class="timeline-panel" data-toggle="modal" data-target="#publicationModal2">
-                                <div class="timeline-heading">
+                        <li>
+                            <div class="timeline-panel">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/2.jpg" alt="" data-toggle="modal" data-target="#publicationModal2">
+                                </div>
+                                <div class="timeline-details">
                                     <h4>Typing in the Matrix: An Augmented Reality vs. Physical Keyboard Showdown</h4>
                                     <p>Published on 24/11/2023</p>
                                     <p class="more-info">Click for more information</p>
@@ -109,7 +120,7 @@
                             <div class="modal-dialog modal-full" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <button type of button="close" data-dismiss="modal" aria-label="Close">
+                                        <button type="button" the "close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         <h4 class="modal-title" id="publicationModal2Label">Typing in the Matrix: An Augmented Reality vs. Physical Keyboard Showdown</h4>
@@ -125,19 +136,7 @@
                                         <p>Explore the comparative effectiveness of augmented reality (AR) keyboard versus physical keyboards in a controlled study. This research aims to assess the efficiency, speed, and user satisfaction in different typing environments, providing crucial insights into the future of human-computer interaction tools in digital workspaces.</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type of button="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" the "btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bootstrap and jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
-</html>
+                            </div
