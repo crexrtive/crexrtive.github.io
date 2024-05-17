@@ -14,68 +14,41 @@
         }
         .container {
             width: 100%;
-            max-width: 1140px;
-            margin: 0 auto;
             padding: 20px;
+            box-sizing: border-box;
         }
         .header {
             text-align: center;
             padding: 50px 20px;
         }
-        .timeline {
-            list-style: none;
-            padding: 0;
-            position: relative;
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-around;
-        }
-        .timeline:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: #ccc;
-            left: 50%;
-            z-index: 1;
-        }
-        .timeline-item {
-            position: relative;
-            width: 45%; /* Adjusted for more space */
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        .timeline-item-content {
+        .publication {
             background: white;
             padding: 20px;
+            margin-bottom: 20px;
             border-radius: 5px;
             box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-            z-index: 2;
-            position: relative;
+            display: flex;
+            align-items: center;
         }
         .bullet {
             width: 12px;
             height: 12px;
             border-radius: 50%;
             background: #333;
-            position: absolute;
-            top: 22px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 3;
+            margin-right: 20px;
         }
-        .timeline-item h4 {
+        h4 {
             margin: 0 0 5px 0;
             font-size: 1.5em;
         }
-        .timeline-item p {
+        p {
             margin: 0;
         }
         .more-info {
             color: blue;
             cursor: pointer;
             text-decoration: underline;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -85,24 +58,22 @@
         <p>Explore our latest research and insights.</p>
     </div>
     <div class="container">
-        <ul class="timeline">
-            <li class="timeline-item">
-                <div class="timeline-item-content">
-                    <div class="bullet"></div>
-                    <h4>AUGMENTED REALITY AS A TOOL FOR ASSESSMENTS</h4>
-                    <p>Published on 16/10/2023</p>
-                    <p class="more-info">Click for more information</p>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-item-content">
-                    <div class="bullet"></div>
-                    <h4>ANOTHER TOPIC HERE</h4>
-                    <p>Published on 24/11/2023</p>
-                    <p class="more-info">Click for more information</p>
-                </div>
-            </li>
-        </ul>
+        <div class="publication">
+            <div class="bullet"></div>
+            <div>
+                <h4>AUGMENTED REALITY AS A TOOL FOR ASSESSMENTS</h4>
+                <p>Published on 16/10/2023</p>
+                <p class="more-info">Click for more information</p>
+            </div>
+        </div>
+        <div class="publication">
+            <div class="bullet"></div>
+            <div>
+                <h4>ANOTHER TOPIC HERE</h4>
+                <p>Published on 24/11/2023</p>
+                <p class="more-info">Click for more information</p>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap and jQuery -->
