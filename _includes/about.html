@@ -33,6 +33,13 @@
             text-decoration: underline;
             cursor: pointer;
         }
+        .small-bullet {
+            width: 10px; /* Bullet size */
+            height: 10px; /* Bullet size */
+            background-color: #000;
+            border-radius: 50%;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +58,7 @@
                         <!-- First Publication -->
                         <li>
                             <div class="timeline-image">
-                                <span class="glyphicon glyphicon-bullet" aria-hidden="true"></span>
+                                <span class="small-bullet"></span>
                             </div>
                             <div class="timeline-panel" data-toggle="modal" data-target="#publicationModal1">
                                 <div class="timeline-heading">
@@ -94,7 +101,7 @@
                         <!-- Second Publication -->
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <span class="glyphicon glyphicon-bullet" aria-hidden="true"></span>
+                                <span class="small-bullet"></span>
                             </div>
                             <div class="timeline-panel" data-toggle="modal" data-target="#publicationModal2">
                                 <div class="timeline-heading">
