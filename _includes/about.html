@@ -7,156 +7,113 @@
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .modal-full {
-            min-width: 100%;
+        body {
             margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-        .modal-content {
-            height: 100vh;
-            background-color: white;
-            color: black;
-            border-radius: 0;
-            border: none;
-        }
-        .modal-header, .modal-body, .modal-footer {
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
             padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
         }
         .timeline {
             list-style: none;
             padding: 0;
             position: relative;
-            margin-top: 20px;
         }
         .timeline:before {
             content: '';
             position: absolute;
             top: 0;
             bottom: 0;
-            width: 1px;
+            width: 2px;
             background: #ccc;
             left: 50%;
-            margin-left: -1px;
         }
-        .timeline li {
-            margin-bottom: 20px;
+        .timeline-item {
             position: relative;
             width: 50%;
+            padding: 10px 40px;
+            box-sizing: border-box;
         }
-        .timeline li.right {
-            left: 50%;
+        .timeline-item-content {
+            display: flex;
+            align-items: center;
         }
-        .timeline li.left {
-            right: 50%;
-            text-align: right;
-        }
-        .timeline .timeline-heading {
-            margin-bottom: 15px;
-        }
-        .timeline .small-bullet {
-            width: 10px;
-            height: 10px;
-            background-color: #000;
+        .bullet {
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
-            display: inline-block;
-            position: absolute;
-            left: -5px;
-            top: 5px;
-            margin-left: -10px;
+            background: #333;
         }
-        .timeline li.right .small-bullet {
-            left: auto;
-            right: -5px;
-            margin-left: 0;
-            margin-right: -10px;
+        .timeline-item.left {
+            float: left;
+            text-align: right;
+            clear: both;
+        }
+        .timeline-item.left .bullet {
+            position: absolute;
+            right: -6px; /* Half of bullet width */
+            top: 15px;
+        }
+        .timeline-item.right {
+            float: right;
+            text-align: left;
+        }
+        .timeline-item.right .bullet {
+            position: absolute;
+            left: -6px; /* Half of bullet width */
+            top: 15px;
+        }
+        .timeline-item h4 {
+            margin: 0 0 5px 0;
+            font-size: 1.5em;
+        }
+        .timeline-item p {
+            margin: 0;
         }
         .more-info {
-            font-size: 0.75em;
-            text-decoration: underline;
+            color: blue;
             cursor: pointer;
-        }
-        .timeline-heading h4 {
-            margin-top: 0;
-        }
-        .timeline-heading p {
-            font-size: 0.85em;
-            color: grey;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <!-- Publications Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Publications</h2>
-                    <h3 class="section-subheading text-muted">Explore our latest research and insights.</h3>
+    <div class="header">
+        <h1>PUBLICATIONS</h1>
+        <p>Explore our latest research and insights.</p>
+    </div>
+    <div class="container">
+        <ul class="timeline">
+            <li class="timeline-item left">
+                <div class="timeline-item-content">
+                    <div class="bullet"></div>
+                    <div>
+                        <h4>AUGMENTED REALITY AS A TOOL FOR ASSESSMENTS</h4>
+                        <p>Published on 16/10/2023</p>
+                        <p class="more-info">Click for more information</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <!-- First Publication -->
-                        <li class="timeline-panel left" data-toggle="modal" data-target="#publicationModal1">
-                            <div class="timeline-heading">
-                                <span class="small-bullet"></span>
-                                <h4>The Benefits of Utilizing Augmented Reality as a Tool for Assessments</h4>
-                                <p>Published on 16/10/2023</p>
-                                <p class="more-info">Click for more information</p>
-                            </div>
-                        </li>
-                        <!-- Modal for the first publication -->
-                        <div class="modal fade" id="publicationModal1" tabindex="-1" role="dialog" aria-labelledby="publicationModal1Label" aria-hidden="true">
-                            <div class="modal-dialog modal-full" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        <h4 class="modal-title" id="publicationModal1Label">The Benefits of Utilizing Augmented Reality as a Tool for Assessments</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <!-- Body content here -->
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Second Publication -->
-                        <li class="timeline-panel right" data-toggle="modal" data-target="#publicationModal2">
-                            <div class="timeline-heading">
-                                <span class="small-bullet"></span>
-                                <h4>Typing in the Matrix: An Augmented Reality vs. Physical Keyboard Showdown</h4>
-                                <p>Published on 24/11/2023</p>
-                                <p class="more-info">Click for more information</p>
-                            </div>
-                        </li>
-                        <!-- Modal for the second publication -->
-                        <div class="modal fade" id="publicationModal2" tabindex="-1" role="dialog" aria-labelledby="publicationModal2Label" aria-hidden="true">
-                            <div class="modal-dialog modal-full" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        <h4 class="modal-title" id="publicationModal2Label">Typing in the Matrix: An Augmented Reality vs. Physical Keyboard Showdown</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <!-- Body content here -->
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
+            </li>
+            <li class="timeline-item right">
+                <div class="timeline-item-content">
+                    <div class="bullet"></div>
+                    <div>
+                        <h4>ANOTHER TOPIC HERE</h4>
+                        <p>Published on 24/11/2023</p>
+                        <p class="more-info">Click for more information</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </li>
+        </ul>
+    </div>
 
     <!-- Bootstrap and jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
