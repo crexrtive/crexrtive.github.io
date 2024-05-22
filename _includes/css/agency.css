@@ -884,12 +884,12 @@ body {
 }
 
 #portfolio .portfolio-item {
-    background-color: #f0f0f0; /* Açık gri renk */
+    background-color: #000; /* Siyah renk */
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 5px;
     text-align: center;
-    color: #000; /* Siyah metin rengi */
+    color: #fff; /* Beyaz metin rengi */
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -905,11 +905,12 @@ body {
 
 #portfolio .portfolio-caption h4 {
     margin-top: 0;
+    color: #fff; /* Beyaz renk */
 }
 
 #portfolio .portfolio-caption p {
     font-size: 14px;
-    color: #666;
+    color: #bbb; /* Açık gri renk */
 }
 
 /* Modal styling */
@@ -939,4 +940,3 @@ body {
 .modal-footer {
     background-color: #f7f7f7; /* Footer arka plan rengi */
 }
-
