@@ -52,20 +52,21 @@
             margin: 0;
         }
         .modal-content {
-            background: rgba(0, 0, 0, 0.8); /* Arka planı siyah ve yarı saydam yap */
-            color: #fff; /* Metin rengini beyaz yap */
+            height: 100vh; /* Tam ekran yüksekliği */
+            color: #fff; /* Metin rengi */
+            background-color: #333; /* Koyu gri arka plan rengi */
         }
-        .modal-header,
-        .modal-footer {
-            border: none;
+        .modal-header, .modal-body, .modal-footer {
+            padding: 20px; /* İç boşluk */
+        }
+        .modal-header {
+            background-color: #333; /* Header arka plan rengi */
         }
         .modal-body {
-            overflow-y: auto;
-            padding: 20px;
+            overflow-y: auto; /* İçerik çok fazlaysa kaydırmayı etkinleştir */
         }
-        .modal-header .close {
-            color: #fff;
-            opacity: 1;
+        .modal-footer {
+            background-color: #333; /* Footer arka plan rengi */
         }
     </style>
 </head>
@@ -107,7 +108,6 @@
                     <p class="text-muted">Lorem ipsum dolor</p>
                 </div>
             </div>
-            <!-- Diğer projeler burada eklenebilir -->
         </div>
     </div>
 </section>
@@ -125,13 +125,9 @@
             </div>
             <div class="modal-body">
                 <p>In recent years, virtual reality (VR), augmented reality (AR), and mixed reality (MR) have gained immense popularity and recognition, revolutionizing various industries and captivating audiences worldwide. The convergence of Augmented Reality and Virtual Reality technologies has paved the way for the development of Mixed Reality environments that offer users a more immersive and interactive experience. We are in the era of mixed reality headsets and the emergence of Apple Vision Pro or Meta Quest 3 demonstrates that yet is expected to come. However, unfortunately, while the potential of VR, AR, and MR is vast, many of the existing solutions and developments come with a hefty price tag, making them inaccessible to a large portion of users. I am tackling this accessibility gap, under the guidance of Prof. Dr. Kürşat Çağıltay, by developing a mixed reality environment tailored for mobile devices.</p>
-
                 <p>Our approach is centered around allowing mixed reality experiences through the utilization of inexpensive and accessible cardboard or plastic glasses with lenses. By downloading our mixed reality environment onto their phones, users can instantly immerse themselves in a captivating MR experience without breaking the bank.</p>
-
                 <p>Furthermore, we've implemented an innovative interaction scheme that eliminates the need for traditional hand-based interactions. The user triggers the 3D UI button in the MR environment by maintaining a continuous gaze for a few seconds, accompanied by a loading animation to inform the user. This hands-free interaction not only enhances usability but also addresses common issues like blurry touch or reliance on external devices.</p>
-
                 <p>Augmented reality functionality is achieved through the phone's camera, while virtual reality features are implemented using a post-processing shader overlaid on the camera's final image. This shader includes barrel distortion and other adjustments to enhance realism and immersion within the mixed reality environment.</p>
-
                 <p>It's worth noting that the integration of VR and AR within a single mobile app is a novel concept, yet to be realized in the market. As such, the potential impact of our project is substantial, with implications ranging from industry adjustments to the production of smartphones optimized for MR applications. Our endeavor represents a significant step towards making mixed reality experiences more accessible and affordable, opening doors to a new era of immersive technologies.</p>
             </div>
         </div>
