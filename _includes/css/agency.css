@@ -865,3 +865,78 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+body {
+    background-color: #000; /* Arka plan rengini siyah yap */
+}
+
+.section-heading,
+.section-subheading {
+    color: #fff !important; /* Başlık ve alt başlık rengini beyaz yap */
+}
+
+.bg-light-gray {
+    background-color: #000 !important; /* Bölüm arka planını siyah yap */
+}
+
+#portfolio {
+    padding: 60px 0;
+}
+
+#portfolio .portfolio-item {
+    background-color: #f0f0f0; /* Açık gri renk */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-align: center;
+    color: #000; /* Siyah metin rengi */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio .portfolio-item img {
+    margin-bottom: 15px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#portfolio .portfolio-caption {
+    padding: 10px;
+}
+
+#portfolio .portfolio-caption h4 {
+    margin-top: 0;
+}
+
+#portfolio .portfolio-caption p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Modal styling */
+.modal-full {
+    width: 100%;
+    margin: 0;
+}
+
+.modal-content {
+    height: 100vh; /* Tam ekran yüksekliği */
+    color: #000; /* Metin rengi */
+    background-color: #fff; /* Arka plan rengi */
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 20px; /* İç boşluk */
+}
+
+.modal-header {
+    background-color: #f7f7f7; /* Header arka plan rengi */
+}
+
+.modal-body {
+    overflow-y: auto; /* İçerik çok fazlaysa kaydırmayı etkinleştir */
+}
+
+.modal-footer {
+    background-color: #f7f7f7; /* Footer arka plan rengi */
+}
+
