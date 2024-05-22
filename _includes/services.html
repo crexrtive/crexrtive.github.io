@@ -25,11 +25,30 @@
         .modal-header, .modal-body, .modal-footer {
             padding: 20px;
         }
+
+        /* Styles for the About section */
+        .about-section {
+            background-color: black;
+            color: white;
+            padding: 50px 0;
+        }
+
+        .about-section .section-heading,
+        .about-section .section-subheading,
+        .about-section p,
+        .about-section .btn {
+            color: white;
+        }
+
+        .about-section .btn {
+            background-color: grey;
+            border: none;
+        }
     </style>
 </head>
 <body>
 <!-- About Section -->
-<section id="services">
+<section id="services" class="about-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -44,7 +63,7 @@
                 </p>
                 <!-- Button to Open the Modal -->
                 <div class="text-center" style="margin-top: 20px;">
-                    <button type="button" class="btn btn-lg" style="background-color: grey; color: white;" data-toggle="modal" data-target="#hciModal">
+                    <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#hciModal">
                         WHAT IS HCI?
                     </button>
                 </div>
@@ -116,4 +135,3 @@ Weinberg and Shneiderman have published the first book on the subject during the
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
-
