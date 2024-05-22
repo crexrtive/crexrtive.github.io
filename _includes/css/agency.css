@@ -879,6 +879,33 @@ body {
     background-color: #000 !important; /* Bölüm arka planını siyah yap */
 }
 
+.modal-backdrop.show {
+    opacity: 0.9 !important; /* Modal arka planının opaklığını ayarlar */
+    background-color: #000 !important; /* Modal arka plan rengini siyah yapar */
+    backdrop-filter: blur(10px); /* Bulanık efekt ekler */
+}
+
+.modal-content {
+    background-color: #333; /* Modal içeriğinin arka plan rengini koyu gri yapar */
+    color: #fff; /* Yazı rengini beyaz yapar */
+    border: none; /* Kenar çizgilerini kaldırır */
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    border-bottom: none; /* Modal içindeki ayrımcı çizgileri kaldırır */
+}
+
+.close {
+    color: #fff; /* Kapat butonunun rengini beyaz yapar */
+    opacity: 1; /* Kapat butonunun opaklığını ayarlar */
+}
+
+.close:hover {
+    color: #999; /* Kapat butonunun üzerine gelindiğinde rengini değiştirir */
+}
+
 
 
 
