@@ -7,29 +7,37 @@
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Ensures the modal content uses all available space */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Gri arka plan */
+            color: white; /* Beyaz metin rengi */
+        }
+
+        /* Modal tam ekran ayarlamaları */
         .modal-full {
             min-width: 100%;
             margin: 0;
         }
 
         .modal-content {
-            height: 100vh; /* Full height */
-            background-color: white; /* White background */
-            color: black; /* Text color */
-            border-radius: 0; /* No border radius */
-            border: none; /* No border */
+            height: 100vh; /* Tam ekran boyu */
+            background-color: white; /* Beyaz arka plan */
+            color: black; /* Siyah metin rengi */
+            border-radius: 0; /* Kenar yuvarlaklığı yok */
+            border: none; /* Çerçeve yok */
         }
 
-        /* Custom styles for the modal header, body, and footer */
+        /* Modal başlık, içerik ve alt kısmı için özel stiller */
         .modal-header, .modal-body, .modal-footer {
             padding: 20px;
         }
 
-        /* Styles for the About section */
+        /* Hakkında bölümü için stiller */
         .about-section {
-            background-color: #333; /* Dark grey background */
-            color: white;
+            background-color: #333; /* Gri arka plan */
+            color: white; /* Beyaz metin */
             padding: 50px 0;
         }
 
@@ -37,17 +45,17 @@
         .about-section .section-subheading,
         .about-section p,
         .about-section .btn {
-            color: white;
+            color: white; /* Metin rengi beyaz */
         }
 
         .about-section .btn {
-            background-color: black; /* Black button */
-            border: none;
+            background-color: grey; /* Buton arka planı gri */
+            border: none; /* Buton çerçevesi yok */
         }
     </style>
 </head>
 <body>
-<!-- About Section -->
+<!-- Hakkında Bölümü -->
 <section id="services" class="about-section">
     <div class="container">
         <div class="row">
@@ -61,7 +69,7 @@
                 <p class="text-muted">
                     Explore the multidisciplinary field of Human-Computer Interaction which merges technology, design, and cognitive science to enhance human interaction with computers.
                 </p>
-                <!-- Button to Open the Modal -->
+                <!-- Modal Açma Butonu -->
                 <div class="text-center" style="margin-top: 20px;">
                     <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#hciModal">
                         WHAT IS HCI?
@@ -72,7 +80,7 @@
     </div>
 </section>
 
-<!-- The Modal -->
+<!-- Modal -->
 <div class="modal fade" id="hciModal" tabindex="-1" role="dialog" aria-labelledby="hciModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-full" role="document">
         <div class="modal-content">
@@ -83,7 +91,45 @@
                 <h4 class="modal-title" id="hciModalLabel">What is Human-Computer Interaction?</h4>
             </div>
             <div class="modal-body" style="overflow-y: auto;">
-                <!-- Content here -->
+               <h5>Overview</h5>
+               <p>Human-Computer Interaction is an interdisciplinary field of study interested in design, evaluation and implementation of interactive technology. Since Human-Computer Interaction studies the interaction between human and computer, it is associated with the study fields suach as human behavior, psychology, cognitive science, computer science and software engineering as well as ergonomics, graphic and industrial design, sociology, anthropology and educational sciences [1].
+
+Human-Computer Interaction (HCI) has four main components: the user, task, tools / interface, the context. HCI studies requires the evaluation of obtained observations while the user performs certain tasks and habits of the user together. These data are used in the development process of interactive systems. After Vannevar Bush introduced the idea of ​​theoretical analog computer (MEMEX: memory extender) in 1945, Shackel conducted the first studies in HCI field [2]. In 1969, a periodical magazine "International Journal of Man-Machine Studies" was founded, in the 1970s "user friendly" (user-friendliness) concept was introduced, in 1976 NATO was sponsor for the "Man-Computer Interaction" related workshop.
+
+Weinberg and Shneiderman have published the first book on the subject during these years [3, 4]. In 1982 the ACM (Association for Computing Machinery) launched the of SIGCH (Special Interest Group on Computer-Human Interaction) and CHI (International Conference for Human-Computer Interaction) conferences. In the late 1980s, four major magazines in the field of Human-Computer Interaction were continued to be published. During this period, the first industrial Human-Computer Interaction Laboratory was established,  in the 1990s with the development of web technologies, the importance of the HCI studies was increased and user-centered design began to come forward rather than technical/designer-centered design. Towards the end of 90s, the first HCI academic programs have been initiated in universities such as Carnegie Mellon University, Indiana University.</p>
+
+               <p>Booth draws the framework of Human Computer Interaction studies with titles below [5]:</p>
+               <ul>
+                   <li>What are the characteristics of people that affect their use of technology? </li>
+                   <li>What are the aspects of technology that impact people's use of technology?</li>
+                   <li>How do people obtain their interactive capabilities and conceptualizes them? </li>
+                   <li>How do we match people's needs with technical resources?</li>
+                   <li>How can we design usable technologies?</li>
+                   <li>How does technology affect the organization? </li>
+               </ul>
+
+               <h5>Significant Milestones</h5>
+               <p>Starting with the theoretical concepts in 1945 to the development of the first HCI programs in universities like Carnegie Mellon and Indiana University in the 1990s.</p>
+
+               <h5>Current Research</h5>
+               <ul>
+                   <li>Examining the effects of screen reading versus paper.</li>
+                   <li>Investigating the impact of aging on interaction skills.</li>
+                   <li>Exploring effective color combinations and user interface design.</li>
+               </ul>
+
+               <h5>Practical Applications</h5>
+               <p>Today, HCI research influences user-centered design approaches in technology, helping to create systems that are more intuitive and better suited to users' needs.</p>
+
+               <h5>References</h5>
+               <ol>
+                   <li>Çagıltay, K., "E-dönüsümü Kullanabilmek? İnsan Bilgisayar Etkilesimi, Kullanılabilirlik ve e-Devlet Projeleri", Bilisim, 2005.</li>
+                   <li>Shackel, B., "Ergonomics for a computer", Design, 1959.</li>
+                   <li>Shneiderman, B., "Software Psychology", 1980.</li>
+                   <li>Weinberg, G. M., "The psychology of computer programming", 1971.</li>
+                   <li>Booth, P., "An Introduction to Human-Computer Interaction", 1989.</li>
+                   <li>Bailey, S., "Iterative methodology and Designer Training in HCI design", ACM INTERCHI'93.</li>
+               </ol>
             </div>
            <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -92,7 +138,7 @@
     </div>
 </div>
 
-<!-- Bootstrap and jQuery -->
+<!-- Bootstrap ve jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
