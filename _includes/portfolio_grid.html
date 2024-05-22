@@ -4,7 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000; /* Arka plan rengini siyah yap */
+            color: #fff; /* Metin rengini beyaz yap */
+        }
+        .section-heading,
+        .section-subheading {
+            color: #fff !important; /* Başlık ve alt başlık rengini beyaz yap */
+        }
+        .bg-light-gray {
+            background-color: #000 !important; /* Bölüm arka planını siyah yap */
+        }
+        #portfolio {
+            padding: 60px 0;
+        }
+        #portfolio .portfolio-item {
+            background-color: #000; /* Siyah renk */
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            text-align: center;
+            color: #fff; /* Beyaz metin rengi */
+            box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1); /* Beyaz gölge */
+        }
+        #portfolio .portfolio-item img {
+            margin-bottom: 15px;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        #portfolio .portfolio-caption {
+            padding: 10px;
+        }
+        #portfolio .portfolio-caption h4 {
+            margin-top: 0;
+            color: #fff; /* Beyaz renk */
+        }
+        #portfolio .portfolio-caption p {
+            font-size: 14px;
+            color: #bbb; /* Açık gri renk */
+        }
+        /* Modal styling */
+        .modal-full {
+            width: 100%;
+            margin: 0;
+        }
+        .modal-content {
+            height: 100vh; /* Tam ekran yüksekliği */
+            color: #000; /* Metin rengi */
+            background-color: #fff; /* Arka plan rengi */
+        }
+        .modal-header, .modal-body, .modal-footer {
+            padding: 20px; /* İç boşluk */
+        }
+        .modal-header {
+            background-color: #f7f7f7; /* Header arka plan rengi */
+        }
+        .modal-body {
+            overflow-y: auto; /* İçerik çok fazlaysa kaydırmayı etkinleştir */
+        }
+        .modal-footer {
+            background-color: #f7f7f7; /* Footer arka plan rengi */
+        }
+    </style>
 </head>
 <body>
 <!-- Portfolio Grid Section -->
