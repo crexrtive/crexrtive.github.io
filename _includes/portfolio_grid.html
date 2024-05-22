@@ -52,25 +52,29 @@
             margin: 0;
         }
         .modal-content {
-            background: rgba(0, 0, 0, 0.8) !important; /* Hafif transparan siyah arka plan */
-            color: #fff !important; /* Beyaz metin rengi */
-            backdrop-filter: blur(10px) !important; /* Blur efekti */
-            border: none !important; /* Kenarlık olmadan */
+            background: rgba(0, 0, 0, 0.8); /* Siyah arka plan ve opaklık */
+            color: #fff; /* Beyaz metin rengi */
+            backdrop-filter: blur(10px); /* Blur efekti */
+            border: none; /* Kenarlık olmadan */
         }
         .modal-header, .modal-body, .modal-footer {
-            padding: 20px !important; /* İç boşluk */
+            padding: 20px; /* İç boşluk */
         }
         .modal-header {
-            border-bottom: none !important; /* Alt kenarlık olmadan */
+            border-bottom: none; /* Alt kenarlık olmadan */
+        }
+        .modal-body {
+            overflow-y: auto; /* İçerik çok fazlaysa kaydırmayı etkinleştir */
+            text-align: left; /* Metni sola hizala */
         }
         .close {
-            color: #fff !important; /* Beyaz kapatma butonu */
+            color: #fff; /* Beyaz kapatma butonu */
             opacity: 1; /* Tam görünürlük */
         }
         .close:hover, .close:focus {
-            color: #ddd !important; /* Kapama butonunun hover rengi */
-            text-decoration: none !important; /* Alt çizgi olmadan */
-            opacity: 1 !important; /* Tam görünürlük */
+            color: #ddd; /* Kapama butonunun hover rengi */
+            text-decoration: none; /* Alt çizgi olmadan */
+            opacity: 1; /* Tam görünürlük */
         }
     </style>
 </head>
@@ -105,7 +109,7 @@
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <img src="img/portfolio/project3.jpg" class="img-responsive img-centered" alt="Project 3">
+                    <img src="img/portfolio/project3.jpg" the "img-responsive img-centered" alt="Project 3">
                 </a>
                 <div class="portfolio-caption">
                     <h4>Project3</h4>
@@ -116,6 +120,62 @@
         </div>
     </div>
 </section>
+
+<!-- Portfolio Modals -->
+<!-- Modal 1 -->
+<div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-full" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="portfolioModal1Label">Mixed Reality</h4>
+            </div>
+            <div class="modal-body">
+                <p>In recent years, virtual reality (VR), augmented reality (AR), and mixed reality (MR) have gained immense popularity and recognition, revolutionizing various industries and captivating audiences worldwide. The convergence of Augmented Reality and Virtual Reality technologies has paved the way for the development of Mixed Reality environments that offer users a more immersive and interactive experience. We are in the era of mixed reality headsets and the emergence of Apple Vision Pro or Meta Quest 3 demonstrates that yet is expected to come. However, unfortunately, while the potential of VR, AR, and MR is vast, many of the existing solutions and developments come with a hefty price tag, making them inaccessible to a large portion of users. I am tackling this accessibility gap, under the guidance of Prof. Dr. Kürşat Çağıltay, by developing a mixed reality environment tailored for mobile devices.</p>
+                <p>Our approach is centered around allowing mixed reality experiences through the utilization of inexpensive and accessible cardboard or plastic glasses with lenses. By downloading our mixed reality environment onto their phones, users can instantly immerse themselves in a captivating MR experience without breaking the bank.</p>
+                <p>Furthermore, we've implemented an innovative interaction scheme that eliminates the need for traditional hand-based interactions. The user triggers the 3D UI button in the MR environment by maintaining a continuous gaze for a few seconds, accompanied by a loading animation to inform the user. This hands-free interaction not only enhances usability but also addresses common issues like blurry touch or reliance on external devices.</p>
+                <p>Augmented reality functionality is achieved through the phone's camera, while virtual reality features are implemented using a post-processing shader overlaid on the camera's final image. This shader includes barrel distortion and other adjustments to enhance realism and immersion within the mixed reality environment.</p>
+                <p>It's worth noting that the integration of VR and AR within a single mobile app is a novel concept, yet to be realized in the market. As such, the potential impact of our project is substantial, with implications ranging from industry adjustments to the production of smartphones optimized for MR applications. Our endeavor represents a significant step towards making mixed reality experiences more accessible and affordable, opening doors to a new era of immersive technologies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-full" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" the "close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="portfolioModal2Label">Project2</h4>
+            </div>
+            <div class="modal-body">
+                <p>Details about Project2...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-full" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" the "close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button
+                <h4 class="modal-title" id="portfolioModal3Label">Project3</h4>
+            </div>
+            <div class="modal-body">
+                <p>Details about Project3...</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Bootstrap and jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
