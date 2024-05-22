@@ -905,6 +905,21 @@ body {
 .close:hover {
     color: #999; /* Kapat butonunun üzerine gelindiğinde rengini değiştirir */
 }
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7); /* Yarı şeffaf siyah arka plan */
+    backdrop-filter: blur(5px); /* Arka planı bulanıklaştır */
+}
+
+.modal-content {
+    background-color: #000; /* İçeriğin arka planını tam siyah yap */
+    color: #fff; /* İçerik metinlerini beyaz yap */
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    border-color: #333; /* Kenarlıklar için koyu gri */
+}
 
 
 
