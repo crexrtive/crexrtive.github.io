@@ -11,45 +11,33 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #333; /* Dark grey background */
-            color: white; /* White text color */
+            background-color: #333; /* Gri arka plan */
+            color: white; /* Beyaz metin rengi */
         }
 
-        /* Full screen modal settings */
+        /* Modal tam ekran ayarlamaları */
         .modal-full {
-            width: 100%;
+            min-width: 100%;
             margin: 0;
         }
 
         .modal-content {
-            height: 100vh; /* Full screen height */
-            background-color: white; /* White background */
-            color: black; /* Black text color */
-            border-radius: 0; /* No border radius */
-            border: none; /* No border */
+            height: 100vh; /* Tam ekran boyu */
+            background-color: white; /* Beyaz arka plan */
+            color: black; /* Siyah metin rengi */
+            border-radius: 0; /* Kenar yuvarlaklığı yok */
+            border: none; /* Çerçeve yok */
         }
 
-        /* Special styles for modal header, body, and footer */
+        /* Modal başlık, içerik ve alt kısmı için özel stiller */
         .modal-header, .modal-body, .modal-footer {
             padding: 20px;
         }
 
-        /* Centering the modal body content */
-        .modal-body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal-body-content {
-            max-width: 600px; /* Limiting content width for better readability */
-            text-align: left;
-        }
-
-        /* Styles for the About section */
+        /* Hakkında bölümü için stiller */
         .about-section {
-            background-color: #333; /* Dark grey background */
-            color: white; /* White text color */
+            background-color: #333; /* Gri arka plan */
+            color: white; /* Beyaz metin */
             padding: 50px 0;
         }
 
@@ -57,17 +45,24 @@
         .about-section .section-subheading,
         .about-section p,
         .about-section .btn {
-            color: white; /* White text color */
+            color: white; /* Metin rengi beyaz */
         }
 
         .about-section .btn {
-            background-color: grey; /* Grey button background */
-            border: none; /* No button border */
+            background-color: grey; /* Buton arka planı gri */
+            border: none; /* Buton çerçevesi yok */
+        }
+        
+        /* Content styles to ensure it's centered and readable */
+        .modal-body {
+            max-width: 600px; /* Max width for content */
+            margin: 0 auto; /* Centering the content */
+            overflow-y: auto; /* Enable scrolling */
         }
     </style>
 </head>
 <body>
-<!-- About Section -->
+<!-- Hakkında Bölümü -->
 <section id="services" class="about-section">
     <div class="container">
         <div class="row">
@@ -81,7 +76,7 @@
                 <p class="text-muted">
                     Explore the multidisciplinary field of Human-Computer Interaction which merges technology, design, and cognitive science to enhance human interaction with computers.
                 </p>
-                <!-- Button to Open the Modal -->
+                <!-- Modal Açma Butonu -->
                 <div class="text-center" style="margin-top: 20px;">
                     <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#hciModal">
                         WHAT IS HCI?
@@ -92,7 +87,7 @@
     </div>
 </section>
 
-<!-- The Modal -->
+<!-- Modal -->
 <div class="modal fade" id="hciModal" tabindex="-1" role="dialog" aria-labelledby="hciModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-full" role="document">
         <div class="modal-content">
@@ -102,39 +97,41 @@
                 </button>
                 <h4 class="modal-title" id="hciModalLabel">What is Human-Computer Interaction?</h4>
             </div>
-            <div class="modal-body">
-                <div class="modal-body-content">
-                    <h5>Overview</h5>
-                    <p>Human-Computer Interaction is an interdisciplinary field of study interested in design, evaluation and implementation of interactive technology. Since Human-Computer Interaction studies the interaction between human and computer, it is associated with the study fields such as human behavior, psychology, cognitive science, computer science and software engineering as well as ergonomics, graphic and industrial design, sociology, anthropology and educational sciences.</p>
+            <div class="modal-body" style="overflow-y: auto;">
+               <h5>Overview</h5>
+               <p>Human-Computer Interaction is an interdisciplinary field of study interested in design, evaluation and implementation of interactive technology. Since Human-Computer Interaction studies the interaction between human and computer, it is associated with the study fields such as human behavior, psychology, cognitive science, computer science and software engineering as well as ergonomics, graphic and industrial design, sociology, anthropology and educational sciences.</p>
 
-                    <h5>Significant Milestones</h5>
-                    <p>Starting with the theoretical concepts in 1945 to the development of the first HCI programs in universities like Carnegie Mellon and Indiana University in the 1990s.</p>
+               <h5>Significant Milestones</h5>
+               <p>Starting with the theoretical concepts in 1945 to the development of the first HCI programs in universities like Carnegie Mellon and Indiana University in the 1990s.</p>
 
-                    <h5>Current Research</h5>
-                    <p>Examining the effects of screen reading versus paper. Investigating the impact of aging on interaction skills. Exploring effective color combinations and user interface design.</p>
+               <h5>Current Research</h5>
+               <ul>
+                   <li>Examining the effects of screen reading versus paper.</li>
+                   <li>Investigating the impact of aging on interaction skills.</li>
+                   <li>Exploring effective color combinations and user interface design.</li>
+               </ul>
 
-                    <h5>Practical Applications</h5>
-                    <p>Today, HCI research influences user-centered design approaches in technology, helping to create systems that are more intuitive and better suited to users' needs.</p>
+               <h5>Practical Applications</h5>
+               <p>Today, HCI research influences user-centered design approaches in technology, helping to create systems that are more intuitive and better suited to users' needs.</p>
 
-                    <h5>References</h5>
-                    <ul>
-                        <li>Çağıltay, K., "E-dönüşümü Kullanabilmek? İnsan Bilgisayar Etkileşimi, Kullanılabilirlik ve e-Devlet Projeleri", Bilisim, 2005.</li>
-                        <li>Shackel, B., "Ergonomics for a computer", Design, 1959.</li>
-                        <li>Shneiderman, B., "Software Psychology", 1980.</li>
-                        <li>Weinberg, G. M., "The psychology of computer programming", 1971.</li>
-                        <li>Booth, P., "An Introduction to Human-Computer Interaction", 1989.</li>
-                        <li>Bailey, S., "Iterative methodology and Designer Training in HCI design", ACM INTERCHI'93.</li>
-                    </ul>
-                </div>
+               <h5>References</h5>
+               <ul>
+                   <li>Çağıltay, K., "E-dönüşümü Kullanabilmek? İnsan Bilgisayar Etkileşimi, Kullanılabilirlik ve e-Devlet Projeleri", Bilişim, 2005.</li>
+                   <li>Shackel, B., "Ergonomics for a computer", Design, 1959.</li>
+                   <li>Shneiderman, B., "Software Psychology", 1980.</li>
+                   <li>Weinberg, G. M., "The psychology of computer programming", 1971.</li>
+                   <li>Booth, P., "An Introduction to Human-Computer Interaction", 1989.</li>
+                   <li>Bailey, S., "Iterative methodology and Designer Training in HCI design", ACM INTERCHI'93.</li>
+               </ul>
             </div>
-            <div class="modal-footer">
+           <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Bootstrap and jQuery -->
+<!-- Bootstrap ve jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
