@@ -8,126 +8,124 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #000; /* Arka plan rengini siyah yap */
-            color: #fff; /* Metin rengini beyaz yap */
+            background-color: #000; /* Black background */
+            color: #fff; /* White text color */
         }
         .section-heading,
         .section-subheading {
-            color: #fff !important; /* Başlık ve alt başlık rengini beyaz yap */
+            color: #fff; /* White color */
         }
         .bg-light-gray {
-            background-color: #000 !important; /* Bölüm arka planını siyah yap */
+            background-color: #000; /* Black background */
         }
         #portfolio {
             padding: 60px 0;
         }
         #portfolio .portfolio-item {
-            background-color: #000; /* Siyah renk */
+            background-color: #000; /* Black background */
             padding: 20px;
             margin-bottom: 30px;
             border-radius: 5px;
             text-align: center;
-            color: #fff; /* Beyaz metin rengi */
-            box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1); /* Beyaz gölge */
+            color: #fff; /* White text color */
+            box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1); /* White shadow */
         }
         #portfolio .portfolio-item img {
             margin-bottom: 15px;
             max-width: 100%;
             border-radius: 5px;
         }
-        #portfolio .portfolio-caption {
-            padding: 10px;
-        }
         #portfolio .portfolio-caption h4 {
             margin-top: 0;
-            color: #fff; /* Beyaz renk */
+            color: #fff; /* White color */
         }
         #portfolio .portfolio-caption p {
             font-size: 14px;
-            color: #bbb; /* Açık gri renk */
+            color: #bbb; /* Light gray color */
         }
-        /* Modal styling */
         .modal-full {
             width: 100%;
             margin: 0;
         }
         .modal-content {
-            background: rgba(0, 0, 0, 0.8) !important; /* Hafif transparan siyah arka plan */
-            color: #fff !important; /* Beyaz metin rengi */
-            backdrop-filter: blur(10px) !important; /* Blur efekti */
-            border: none !important; /* Kenarlık olmadan */
+            background: rgba(0, 0, 0, 0.8); /* Slightly transparent black background */
+            color: #fff; /* White text color */
+            backdrop-filter: blur(10px); /* Blur effect */
+            border: none; /* No border */
         }
         .modal-header, .modal-body, .modal-footer {
-            padding: 20px !important; /* İç boşluk */
+            padding: 20px;
         }
         .modal-header {
-            border-bottom: none !important; /* Alt kenarlık olmadan */
+            border-bottom: none;
         }
         .close {
-            color: #fff !important; /* Beyaz kapatma butonu */
-            opacity: 1; /* Tam görünürlük */
+            color: #fff; /* White color */
+            opacity: 1;
         }
         .close:hover, .close:focus {
-            color: #ddd !important; /* Kapama butonunun hover rengi */
-            text-decoration: none !important; /* Alt çizgi olmadan */
-            opacity: 1 !important; /* Tam görünürlük */
+            color: #ddd; /* Lighter gray color */
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        /* Media queries for mobile devices */
+        @media (max-width: 768px) {
+            .modal-dialog,
+            .modal-content {
+                width: 100%; /* Full width */
+                margin: 0;
+                padding: 0;
+                height: auto; /* Auto height */
+            }
+            #portfolio .portfolio-item,
+            .modal-body {
+                padding: 10px; /* Reduced padding */
+            }
+            .section-heading,
+            .portfolio-caption h4 {
+                font-size: 16px; /* Smaller font size for headings */
+            }
+            .modal-header,
+            .modal-footer {
+                padding: 10px; /* Reduced padding */
+            }
         }
     </style>
 </head>
 <body>
-<!-- Portfolio Grid Section -->
-<section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Projects</h2>
-                <h3 class="section-subheading text-muted"></h3>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <img src="img/portfolio/project1.png" class="img-responsive img-centered" alt="Project 1">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>VR Passthrough Capability</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <img src="img/portfolio/project2.png" class="img-responsive img-centered" alt="Project 2">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Metaverse Academy</h4>
+                    </div>
+                </div>
+                <!-- Additional portfolio items can be added here -->
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <img src="img/portfolio/project1.png" class="img-responsive img-centered" alt="Project 1">
+    </section>
 
-                </a>
-                <div class="portfolio-caption">
-                    <h4>VR Passthrough Capability</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <img src="img/portfolio/project2.png" class="img-responsive img-centered" alt="Project 2">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Metaverse Academy</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-          
-</section>
-
-<!-- Bootstrap and jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!-- Custom Script for Modal Fullscreen -->
-<script>
-$(document).ready(function() {
-    $('.modal').on('show.bs.modal', function() {
-        $(this).find('.modal-dialog').css({
-            width: '100vw', // Genişlik olarak tam ekran
-            height: '100vh', // Yükseklik olarak tam ekran
-            'max-height': '100%', 
-            margin: '0',
-            padding: '0'
-        });
-        $(this).find('.modal-content').css({
-            height: 'auto', // İçerik boyunca yükseklik otomatik ayarlanır
-            'min-height': '100vh' // Minimum yükseklik tam ekran
-        });
-    });
-});
-</script>
+    <!-- Bootstrap and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
