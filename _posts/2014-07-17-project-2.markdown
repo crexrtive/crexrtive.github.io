@@ -8,7 +8,7 @@ img: escape.png
 thumbnail: escape-thumbnail.png
 alt: image-alt
 description: The activities of Metaverse Academy focus on various programs that develop skills in virtual reality technologies. These include industry analysis, design of training programs, delivery of Massive Open Online Courses (MOOCs), capacity building and mobilization of opportunities, implementation and evaluation of courses, and promotional and communication strategies. Each activity aims to enhance participants' knowledge and skills in the metaverse and related technologies. For more detailed information, you can visit the Metaverse Academy activities page.
-https://metaverse-academy.tech/activities/
+
 
 
 
