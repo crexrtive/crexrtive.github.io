@@ -866,23 +866,7 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
-body.modal-open {
-    overflow-x: hidden; /* Yatay kaydırmayı engelle */
-}
 
-.modal-dialog {
-    width: 100vw; /* Genişlik olarak tam ekran */
-    max-width: none; /* Maksimum genişliği kaldır */
-    margin: 0; /* Merkezleme için marjı kaldır */
-    height: 100vh; /* Yükseklik olarak tam ekran */
-}
-
-.modal-content {
-    height: 100vh; /* Yükseklik olarak tam ekran */
-    overflow-y: auto; /* İçerik uzunsa kaydırma çubuğu ekle */
-    background-color: rgba(0, 0, 0, 0.8); /* Yarı saydam arka plan */
-    color: #fff; /* Beyaz metin rengi */
-}
 
 
 
