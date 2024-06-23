@@ -63,15 +63,17 @@
         .modal-header {
             border-bottom: none !important; /* Alt kenarlık olmadan */
         }
-        .close {
-            color: #fff !important; /* Beyaz kapatma butonu */
-            opacity: 1; /* Tam görünürlük */
-        }
-        .close:hover, .close:focus {
-            color: #ddd !important; /* Kapama butonunun hover rengi */
-            text-decoration: none !important; /* Alt çizgi olmadan */
-            opacity: 1 !important; /* Tam görünürlük */
-        }
+  .close {
+    font-size: 30px; /* Büyüklüğünü arttır */
+    color: #fff; /* Beyaz renk */
+    opacity: 1; /* Saydamlığı kaldır */
+}
+
+.close:hover, .close:focus {
+    color: #ccc; /* Hover ve focus durumunda renk değişikliği */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    opacity: 0.8; /* Hover ve focus durumunda hafif saydamlık ekle */
+}
     </style>
 </head>
 <body>
