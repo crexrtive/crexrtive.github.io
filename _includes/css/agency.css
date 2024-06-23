@@ -866,23 +866,7 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
-/* Modal close button enhanced visibility */
-.modal-header .close {
-    font-size: 30px; /* Butonun boyutunu büyüt */
-    color: #fff; /* Beyaz renk kullan */
-    opacity: 1 !important; /* Saydamlık değerini ayarla */
-    text-shadow: 0 0 5px #000; /* Metin gölgesi ekle */
-    background-color: rgba(0, 0, 0, 0.1); /* Hafif arka plan rengi ekle */
-    border-radius: 50%; /* Dairesel arka plan yap */
-    padding: 5px; /* İç boşluğu ayarla */
-}
 
-.modal-header .close:hover, .modal-header .close:focus {
-    color: #ccc; /* Hover ve focus durumunda renk değişikliği */
-    text-decoration: none; /* Alt çizgiyi kaldır */
-    opacity: 0.8 !important; /* Saydamlığı ayarla */
-    background-color: rgba(0, 0, 0, 0.2); /* Hover durumunda arka plan rengini değiştir */
-}
 
 
 
