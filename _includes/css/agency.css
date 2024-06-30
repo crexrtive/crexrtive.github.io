@@ -866,22 +866,7 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
-.modal-dialog {
-    width: 90%; /* Modal genişliğini %90 yapar */
-    max-width: 1000px; /* Maksimum genişlik sınırlaması */
-}
 
-.modal-title, .modal-body h5 {
-    font-size: 24px; /* Başlık font boyutu */
-}
-
-.modal-body p, .modal-body li {
-    font-size: 16px; /* Paragraf ve liste öğeleri için font boyutu */
-}
-
-.modal-body ul {
-    padding-left: 20px; /* Liste için sol padding */
-}
 
 
 
