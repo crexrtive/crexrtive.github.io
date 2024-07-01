@@ -8,27 +8,27 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #000; /* Background color black */
-            color: #fff; /* Text color white */
+            background-color: #000; /* Arka plan rengini siyah yap */
+            color: #fff; /* Metin rengini beyaz yap */
         }
         .section-heading,
         .section-subheading {
-            color: #fff !important; /* Heading and subheading color white */
+            color: #fff !important; /* Başlık ve alt başlık rengini beyaz yap */
         }
         .bg-light-gray {
-            background-color: #000 !important; /* Section background black */
+            background-color: #000 !important; /* Bölüm arka planını siyah yap */
         }
         #portfolio {
             padding: 60px 0;
         }
         #portfolio .portfolio-item {
-            background-color: #000; /* Black color */
+            background-color: #000; /* Siyah renk */
             padding: 20px;
             margin-bottom: 30px;
             border-radius: 5px;
             text-align: center;
-            color: #fff; /* White text color */
-            box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1); /* White shadow */
+            color: #fff; /* Beyaz metin rengi */
+            box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1); /* Beyaz gölge */
         }
         #portfolio .portfolio-item img {
             margin-bottom: 15px;
@@ -40,11 +40,11 @@
         }
         #portfolio .portfolio-caption h4 {
             margin-top: 0;
-            color: #fff; /* White color */
+            color: #fff; /* Beyaz renk */
         }
         #portfolio .portfolio-caption p {
             font-size: 14px;
-            color: #bbb; /* Light grey color */
+            color: #bbb; /* Açık gri renk */
         }
         /* Modal styling */
         .modal-full {
@@ -52,35 +52,35 @@
             margin: 0;
         }
         .modal-content {
-            background: rgba(0, 0, 0, 0.8) !important; /* Slightly transparent black background */
-            color: #fff !important; /* White text color */
-            backdrop-filter: blur(10px) !important; /* Blur effect */
-            border: none !important; /* Without border */
+            background: rgba(0, 0, 0, 0.8) !important; /* Hafif transparan siyah arka plan */
+            color: #fff !important; /* Beyaz metin rengi */
+            backdrop-filter: blur(10px) !important; /* Blur efekti */
+            border: none !important; /* Kenarlık olmadan */
         }
         .modal-header, .modal-body, .modal-footer {
-            padding: 20px !important; /* Internal padding */
+            padding: 20px !important; /* İç boşluk */
         }
         .modal-header {
-            border-bottom: none !important; /* Without bottom border */
+            border-bottom: none !important; /* Alt kenarlık olmadan */
         }
-        .modal-header h4 {
-            font-size: 24px; /* Increase modal title font size */
+        .modal-header h5 {
+            font-size: 24px; /* Modal başlık font boyutunu artır */
         }
         .modal-body p {
-            font-size: 18px; /* Increase modal content paragraph font size */
+            font-size: 18px; /* Modal içerik paragraf font boyutunu artır */
         }
         .modal-body h4 {
-            font-size: 22px; /* Increase modal content header font size */
+            font-size: 22px; /* Modal içerik başlık font boyutunu artır */
         }
         .close {
-            font-size: 30px; /* Increase size */
-            color: #fff !important; /* White color */
-            opacity: 1; /* Remove transparency */
+            font-size: 30px; /* Büyüklüğünü arttır */
+            color: #fff !important; /* Beyaz renk */
+            opacity: 1; /* Saydamlığı kaldır */
         }
         .close:hover, .close:focus {
-            color: #ccc; /* Change color on hover and focus */
-            text-decoration: none; /* Remove underline */
-            opacity: 0.8; /* Add slight transparency on hover and focus */
+            color: #ccc; /* Hover ve focus durumunda renk değişikliği */
+            text-decoration: none; /* Alt çizgiyi kaldır */
+            opacity: 0.8; /* Hover ve focus durumunda hafif saydamlık ekle */
         }
     </style>
 </head>
@@ -98,6 +98,7 @@
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                     <img src="img/portfolio/project1.png" class="img-responsive img-centered" alt="Project 1">
+
                 </a>
                 <div class="portfolio-caption">
                     <h4>VR Passthrough Capability</h4>
@@ -113,48 +114,26 @@
                     <p class="text-muted"></p>
                 </div>
             </div>
-        </div>
-    </div>
+          
 </section>
 
-<!-- Metaverse Academy Modal -->
-<div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="metaverseAcademyModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-full" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="metaverseAcademyModalLabel">Metaverse Academy</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>The activities of Metaverse Academy focus on various programs that develop skills in virtual reality technologies...</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+  <!-- jQuery ve Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!-- jQuery and Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Modal'ın açılıp kapanmasını düzenleyen özel JavaScript -->
+    <script>
+    $(document).ready(function() {
+        $('.modal').on('show.bs.modal', function () {
+            // Modal açıldığında padding'i kaldır
+            $('body').css('padding-right', '0');
+        });
 
-<!-- Custom JavaScript for modal show and hide -->
-<script>
-$(document).ready(function() {
-    $('.modal').on('show.bs.modal', function () {
-        // Remove padding when modal opens
-        $('body').css('padding-right', '0');
+        $('.modal').on('hidden.bs.modal', function () {
+            // Modal kapandığında padding'i sıfırla
+            $('body').css('padding-right', '');
+        });
     });
-
-    $('.modal').on('hidden.bs.modal', function () {
-        // Reset padding when modal closes
-        $('body').css('padding-right', '');
-    });
-});
-</script>
+    </script>
 </body>
 </html>
-
