@@ -47,8 +47,8 @@
 
         /* Styles for modal */
         .modal-dialog {
-            width: 90%; /* Modal genişliğini %90 yapar */
-            max-width: 1000px; /* Maksimum genişlik sınırlaması */
+            width: 90%; /* Modal width 90% */
+            max-width: 1000px; /* Maximum width limitation */
         }
         .modal-content {
             background-color: white; /* White background */
@@ -60,13 +60,28 @@
             padding: 20px;
         }
         .modal-title, .modal-body h5 {
-            font-size: 24px; /* Başlık font boyutu */
+            font-size: 24px; /* Title font size */
         }
         .modal-body p, .modal-body li {
-            font-size: 16px; /* Paragraf ve liste öğeleri için font boyutu */
+            font-size: 16px; /* Paragraph and list items font size */
         }
         .modal-body ul {
-            padding-left: 20px; /* Liste için sol padding */
+            padding-left: 20px; /* Padding for list */
+        }
+        /* Customizing the close button and adding the horizontal line under the header */
+        .modal-header {
+            position: relative; /* Needed for absolute positioning of the close button */
+        }
+        .modal-title {
+            border-bottom: 2px solid #444; /* Adding the line under the title */
+            padding-bottom: 10px; /* Space between title and line */
+        }
+        .close {
+            position: absolute; /* Absolute positioning */
+            top: 20px; /* Distance from the top */
+            right: 20px; /* Distance from the right */
+            font-size: 30px; /* Larger font size */
+            color: #aaa; /* Light grey color, change as needed */
         }
     </style>
 </head>
