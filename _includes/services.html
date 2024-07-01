@@ -59,8 +59,14 @@
         .modal-header, .modal-body, .modal-footer {
             padding: 20px;
         }
-        .modal-title, .modal-body h5 {
-            font-size: 24px; /* Title font size */
+        .modal-title {
+            font-size: 28px; /* Larger font size for title */
+            border-bottom: 2px solid white; /* White line under the title */
+            padding-bottom: 10px; /* Space between title and line */
+            color: white; /* White text color */
+        }
+        .modal-body h5 {
+            font-size: 24px; /* Header font size in body */
         }
         .modal-body p, .modal-body li {
             font-size: 16px; /* Paragraph and list items font size */
@@ -68,20 +74,13 @@
         .modal-body ul {
             padding-left: 20px; /* Padding for list */
         }
-        /* Customizing the close button and adding the horizontal line under the header */
-        .modal-header {
-            position: relative; /* Needed for absolute positioning of the close button */
-        }
-        .modal-title {
-            border-bottom: 2px solid #444; /* Adding the line under the title */
-            padding-bottom: 10px; /* Space between title and line */
-        }
         .close {
             position: absolute; /* Absolute positioning */
             top: 20px; /* Distance from the top */
             right: 20px; /* Distance from the right */
             font-size: 30px; /* Larger font size */
-            color: #aaa; /* Light grey color, change as needed */
+            color: white; /* White color */
+            opacity: 1; /* Full opacity */
         }
     </style>
 </head>
