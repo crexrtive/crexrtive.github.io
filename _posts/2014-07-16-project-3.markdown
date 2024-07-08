@@ -1,5 +1,5 @@
 ---
-title: Project3
+title: TÜBİTAK 1001 - Editor Development and Evaluation Project for Teachers to Create Virtual Reality Environments (SAGE)
 subtitle: Lorem ipsum
 layout: default
 modal-id: 3
@@ -10,6 +10,6 @@ alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: The main objective of the SAGE project is to design, develop, and evaluate a Virtual Reality (VR) editor system that is user-friendly, does not require technical knowledge, can be used with mobile devices, integrates with LMS, and is cloud-based for teachers to create rich learning environments. The system will be easy to use, cost-effective for both teachers and students, available in the Turkish language, and tailored to the Turkish education system.
 
 ---
