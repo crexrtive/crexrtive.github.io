@@ -9,28 +9,9 @@
             </div>
         </div>
 
-        <!-- First Row: Single Member -->
+        <!-- All Members -->
         <div class="row">
-            <div class="col-lg-12">
-                <div class="team-member">
-                    <img src="img/team/{{ site.people[0].pic }}.png" class="img-responsive img-circle" alt="">
-                    <h4>{{ site.people[0].name }}</h4>
-                    <p class="text-muted">{{ site.people[0].job }}</p>
-                    <!-- Social Icons -->
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.people[0].social %}
-                        <li>
-                            <a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Second Row: Three Members -->
-        <div class="row">
-            {% for member in site.people offset:1 limit:3 %}
+            {% for member in site.people %}
             <div class="col-md-4">
                 <div class="team-member">
                     <img src="img/team/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
@@ -44,30 +25,38 @@
                         </li>
                         {% endfor %}
                     </ul>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <!-- Third Row: Two Members -->
-        <div class="row">
-            {% for member in site.people offset:4 %}
-            <div class="col-md-6">
-                <div class="team-member">
-                    <img src="img/team/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
-                    <h4>{{ member.name }}</h4>
-                    <p class="text-muted">{{ member.job }}</p>
-                    <!-- Social Icons -->
-                    <ul class="list-inline social-buttons">
-                        {% for network in member.social %}
-                        <li>
-                            <a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
+                    <!-- CV Görüntüleme Düğmesi -->
+                    <button onclick="openCVPopup('{{ member.name }}')">View CV</button>
                 </div>
             </div>
             {% endfor %}
         </div>
     </div>
 </section>
+
+<script>
+function openCVPopup(memberName) {
+    var popup = document.createElement("div");
+    popup.style.position = "fixed";
+    popup.style.left = "50%";
+    popup.style.top = "50%";
+    popup.style.transform = "translate(-50%, -50%)";
+    popup.style.padding = "20px";
+    popup.style.backgroundColor = "white";
+    popup.style.border = "1px solid black";
+    popup.style.zIndex = "1000";
+
+    var cvContent = document.createElement("div");
+    cvContent.innerHTML = '<strong>CV of ' + memberName + ':</strong> <br> Here is some placeholder text for ' + memberName + '\'s CV. You can replace this with actual CV details.';
+    popup.appendChild(cvContent);
+
+    var closeButton = document.createElement("button");
+    closeButton.innerText = "Close";
+    closeButton.onclick = function() {
+        document.body.removeChild(popup);
+    };
+    popup.appendChild(closeButton);
+
+    document.body.appendChild(popup);
+}
+</script>
