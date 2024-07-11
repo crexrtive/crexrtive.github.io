@@ -24,8 +24,8 @@
                         </li>
                         {% endfor %}
                     </ul>
-                    <!-- View Background Button -->
-                    <button type="button" onclick="openPopup('{{ site.people[0].name }}')">View Background</button>
+                    <!-- Modal Button -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal0">More Info</button>
                 </div>
             </div>
         </div>
@@ -46,8 +46,8 @@
                         </li>
                         {% endfor %}
                     </ul>
-                    <!-- View Background Button -->
-                    <button type="button" onclick="openPopup('{{ member.name }}')">View Background</button>
+                    <!-- Modal Button -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal{{ forloop.index }}">More Info</button>
                 </div>
             </div>
             {% endfor %}
@@ -69,8 +69,8 @@
                         </li>
                         {% endfor %}
                     </ul>
-                    <!-- View Background Button -->
-                    <button type="button" onclick="openPopup('{{ member.name }}')">View Background</button>
+                    <!-- Modal Button -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal{{ forloop.index }}">More Info</button>
                 </div>
             </div>
             {% endfor %}
@@ -78,21 +78,50 @@
     </div>
 </section>
 
-<!-- Popup Structure -->
-<div id="popup" style="display:none;">
-    <div id="popup-content"></div>
-    <button onclick="closePopup()">Close</button>
+<!-- Modals -->
+{% for member in site.people %}
+<div class="modal fade" id="teamMemberModal{{ forloop.index0 }}" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel{{ forloop.index0 }}" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-black">
+            <div class="modal-header">
+                <h5 class="modal-title" id="teamMemberModalLabel{{ forloop.index0 }}">{{ member.name }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Job: {{ member.job }}</p>
+                <p>More information about {{ member.name }}.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
+{% endfor %}
 
-<script>
-function openPopup(memberName) {
-    // Example: Set content dynamically, modify as needed
-    var popupContent = "Biography or background information of " + memberName; // Customize this based on actual data
-    document.getElementById('popup-content').innerText = popupContent;
-    document.getElementById('popup').style.display = 'block'; // Assuming your popup has an ID of 'popup'
-}
+<!-- Include Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-}
-</script>
+<!-- Custom CSS -->
+<style>
+    .modal-black .modal-content {
+        background-color: #000;
+        color: #fff;
+    }
+    .modal-black .modal-header {
+        border-bottom: 1px solid #444;
+    }
+    .modal-black .modal-footer {
+        border-top: 1px solid #444;
+    }
+    .btn-dark {
+        background-color: #000;
+        border-color: #000;
+    }
+    .btn-dark:hover {
+        background-color: #444;
+        border-color: #444;
+    }
+</style>
