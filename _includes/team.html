@@ -55,19 +55,19 @@
 </section>
 
 <!-- Modals -->
-{% for member in site.people %}
-<div class="modal fade" id="teamMemberModal{{ forloop.index0 }}" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel{{ forloop.index0 }}" aria-hidden="true">
+<!-- Kürşat Çağıltay -->
+<div class="modal fade" id="teamMemberModal0" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel0" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content modal-black">
             <div class="modal-header">
-                <h5 class="modal-title" id="teamMemberModalLabel{{ forloop.index0 }}">{{ member.name }}</h5>
+                <h5 class="modal-title" id="teamMemberModalLabel0">Kürşat Çağıltay</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>Job: {{ member.job }}</p>
-                <p>More information about {{ member.name }}.</p>
+                <p>Kürşat Cagiltay earned his BS in Mathematics and MS in Computer Engineering from Middle East Technical University (METU). He holds a double Ph.D. in Cognitive Science and Instructional Systems Technology from Indiana University, USA. He directed the technical team that brought the Internet to Turkey in 1993.</p>
+                <p>Professor Cagiltay is the founder of Turkey’s first Human Computer Interaction research and Application lab in the industry standards. His research focuses on Human Computer Interaction, Eye-tracking, Technology Enhanced Learning, Virtual/Augmented/Mixed Reality, educational neuroscience, computer games.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -75,7 +75,48 @@
         </div>
     </div>
 </div>
-{% endfor %}
+
+<!-- Bilgehan Çağıltay -->
+<div class="modal fade" id="teamMemberModal1" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-black">
+            <div class="modal-header">
+                <h5 class="modal-title" id="teamMemberModalLabel1">Bilgehan Çağıltay</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Bilgehan Cagiltay graduated from Sabanci University with BS in Computer Science and Engineering in 2019. He is currently enrolled in Sabanci University and studying for his Master's degree in Computer Science and Engineering. He is working with Selim Balcısoy, in BAVLAB, as well as Kürşat Cagiltay, in the HCI laboratory.</p>
+                <p>Bilgehan's work is focused mainly on HCI, usability, and immersive technologies. His master's thesis is on building and testing XR environments built around audio augmentation. He also has worked on projects in VR and AR environments for research attention.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Faraz Badali Naghadeh -->
+<div class="modal fade" id="teamMemberModal2" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-black">
+            <div class="modal-header">
+                <h5 class="modal-title" id="teamMemberModalLabel2">Faraz Badali Naghadeh</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Faraz Badali Naghadeh holds a Bachelor’s degree in Information Technology from Eastern Mediterranean University (EMU), focusing on networking, security, and backend development. He earned a Master’s degree in Multimedia Informatics with a specialization in Game Technologies from Middle East Technical University (METU), focusing on geolocation-based games and Human-Computer Interaction (HCI).</p>
+                <p>Currently a PhD student in Computer Engineering at Sabancı University, Faraz’s research centers on HCI, immersive technologies like VR and AR, and the use of AI technologies, including vision models and Large Language Models (LLMs), to create embodied virtual agents in VR.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Include Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
