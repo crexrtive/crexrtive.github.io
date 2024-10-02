@@ -45,27 +45,28 @@
 
 
 <style>
- .carousel-control.left, .carousel-control.right {
+  /* Carousel kontrol elemanlarının pozisyon ve boyut düzenlemeleri */
+  .carousel-control.left, .carousel-control.right {
     top: 50%; /* Okların dikey olarak ortalanmasını sağlar */
     transform: translateY(-50%); /* Yatayda merkeze alır */
     z-index: 2; /* Diğer içeriklerin üzerinde görünmesini sağlar */
     background: none; /* Arka planı tamamen şeffaf yapar */
+    box-shadow: none; /* Olası gölge efektini kaldırır */
   }
 
   /* Carousel oklarının genişliği ve simge boyutu ayarları */
   .carousel-control {
     width: 5%; /* Okların genişliğini azaltır */
     font-size: 20px; /* İkon boyutunu küçültür */
-    background: none; /* Burada da arka planı şeffaf hale getirir */
+    background: none; /* Arka planı şeffaf yapar */
+    box-shadow: none; /* Olası gölgeyi tamamen kaldırır */
+    filter: none; /* Olası arka plan filtrelerini de kaldırır */
   }
 
-  /* Carousel görsellerinin boyutlarını kontrol etmek için ek stiller */
-  .carousel-inner .item img {
-    width: 100%;  /* Genişliği sayfa genişliğine uyarlar */
-    height: auto; /* Yüksekliği orijinal en-boy oranını koruyarak ayarlar */
-    max-height: 800px; /* Maksimum yüksekliği sınırlar */
+  .carousel-control.left span, .carousel-control.right span {
+    background-color: transparent; /* İkon arka plan rengini şeffaf yapar */
+    color: white; /* İkon rengini görünür kılmak için beyaz yapar */
   }
-
   .carousel-inner {
     overflow: hidden; /* Resimlerin belirlenen yükseklik dışına çıkmasını engeller */
   }
