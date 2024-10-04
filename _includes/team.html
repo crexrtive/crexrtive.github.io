@@ -11,11 +11,10 @@
 
         <!-- First Row: Single Member -->
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 text-center">
                 <div class="team-member">
-                    <img src="img/team/{{ site.people[0].pic }}.png" class="img-responsive img-circle" alt="">
-                    <h4>{{ site.people[0].name }}</h4>
-                    <p class="text-muted">{{ site.people[0].job }}</p>
+                    <img src="img/team/kursat.png" class="img-responsive img-circle" alt="">
+                    <h4>Kürşat Çağıltay</h4>
                     <!-- Modal Button -->
                     <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal0">More Info</button>
                 </div>
@@ -23,39 +22,72 @@
         </div>
 
         <!-- Second Row: Four Members -->
-        <div class="row">
-            {% for member in site.people offset:1 limit:4 %}
-            <div class="col-md-3">
+        <div class="row justify-content-center">
+            <div class="col-md-3 text-center">
                 <div class="team-member">
-                    <img src="img/team/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
-                    <h4>{{ member.name }}</h4>
-                    <p class="text-muted">{{ member.job }}</p>
+                    <img src="img/team/bilgehan.png" class="img-responsive img-circle" alt="">
+                    <h4>Bilgehan Çağıltay</h4>
                     <!-- Modal Button -->
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal{{ forloop.index }}">More Info</button>
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal1">More Info</button>
                 </div>
             </div>
-            {% endfor %}
+            <div class="col-md-3 text-center">
+                <div class="team-member">
+                    <img src="img/team/utku.png" class="img-responsive img-circle" alt="">
+                    <h4>Utku Alkan</h4>
+                    <!-- Modal Button -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal2">More Info</button>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="team-member">
+                    <img src="img/team/sine.png" class="img-responsive img-circle" alt="">
+                    <h4>Sine Mete</h4>
+                    <!-- Modal Button -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal3">More Info</button>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="team-member">
+                    <img src="img/team/idil.png" class="img-responsive img-circle" alt="">
+                    <h4>Idil Kale</h4>
+                    <!-- Modal Button -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal4">More Info</button>
+                </div>
+            </div>
         </div>
 
-        <!-- Third Row: Three Members Centered -->
+        <!-- Third Row: Three Members -->
         <div class="row justify-content-center">
-            {% for member in site.people offset:5 limit:3 %}
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <div class="team-member">
-                    <img src="img/team/1.png" class="img-responsive img-circle" alt="">
-                    <h4>{{ member.name }}</h4>
-                    <p class="text-muted">Info</p>
+                    <img src="img/team/faraz.png" class="img-responsive img-circle" alt="">
+                    <h4>Faraz</h4>
                     <!-- Modal Button -->
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal{{ forloop.index }}">More Info</button>
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal5">More Info</button>
                 </div>
             </div>
-            {% endfor %}
+            <div class="col-md-4 text-center">
+                <div class="team-member">
+                    <img src="img/team/member_a.png" class="img-responsive img-circle" alt="">
+                    <h4>Member A</h4>
+                    <!-- Modal Button -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal6">More Info</button>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="team-member">
+                    <img src="img/team/member_b.png" class="img-responsive img-circle" alt="">
+                    <h4>Member B</h4>
+                    <!-- Modal Button -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal7">More Info</button>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Modals -->
-<!-- Kürşat Çağıltay -->
+<!-- Modals (Example for Kürşat Çağıltay) -->
 <div class="modal fade" id="teamMemberModal0" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel0" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content modal-black">
@@ -66,53 +98,10 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p>Kürşat Cagiltay earned his BS in Mathematics and MS in Computer Engineering from Middle East Technical University (METU). He holds a double Ph.D. in Cognitive Science and Instructional Systems Technology from Indiana University, USA. He directed the technical team that brought the Internet to Turkey in 1993.</p>
-                <p>Professor Cagiltay is the founder of Turkey’s first Human Computer Interaction research and Application lab in the industry standards. His research focuses on Human Computer Interaction, Eye-tracking, Technology Enhanced Learning, Virtual/Augmented/Mixed Reality, educational neuroscience, computer games.</p>
+                <p>Biographical information about Kürşat Çağıltay...</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Bilgehan Çağıltay -->
-<div class="modal fade" id="teamMemberModal1" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel1" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content modal-black">
-            <div class="modal-header">
-                <h5 class="modal-title" id="teamMemberModalLabel1">Bilgehan Çağıltay</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Bilgehan Cagiltay graduated from Sabanci University with BS in Computer Science and Engineering in 2019. He is currently enrolled in Sabanci University and studying for his Master's degree in Computer Science and Engineering. He is working with Selim Balcısoy, in BAVLAB, as well as Kürşat Cagiltay, in the HCI laboratory.</p>
-                <p>Bilgehan's work is focused mainly on HCI, usability, and immersive technologies. His master's thesis is on building and testing XR environments built around audio augmentation. He also has worked on projects in VR and AR environments for research attention.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Faraz Badali Naghadeh -->
-<div class="modal fade" id="teamMemberModal2" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel2" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content modal-black">
-            <div class="modal-header">
-                <h5 class="modal-title" id="teamMemberModalLabel2">Faraz Badali Naghadeh</h5>
-                <button type="button" the="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Faraz Badali Naghadeh holds a Bachelor’s degree in Information Technology from Eastern Mediterranean University (EMU), focusing on networking, security, and backend development. He earned a Master’s degree in Multimedia Informatics with a specialization in Game Technologies from Middle East Technical University (METU), focusing on geolocation-based games and Human-Computer Interaction (HCI).</p>
-                <p>Currently a PhD student in Computer Engineering at Sabancı University, Faraz’s research centers on HCI, immersive technologies like VR and AR, and the use of AI technologies, including vision models and Large Language Models (LLMs), to create embodied virtual agents in VR.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" the="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
