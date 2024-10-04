@@ -37,10 +37,10 @@
             {% endfor %}
         </div>
 
-        <!-- Third Row: Four Members -->
-        <div class="row">
-            {% for member in site.people offset:5 %}
-            <div class="col-md-3">
+        <!-- Third Row: Three Members Centered -->
+        <div class="row justify-content-center">
+            {% for member in site.people offset:5 limit:3 %}
+            <div class="col-md-4">
                 <div class="team-member">
                     <img src="img/team/1.png" class="img-responsive img-circle" alt="">
                     <h4>{{ member.name }}</h4>
@@ -50,31 +50,12 @@
                 </div>
             </div>
             {% endfor %}
-            <!-- Adding two new members -->
-            <div class="col-md-3">
-                <div class="team-member">
-                    <img src="img/team/1.png" class="img-responsive img-circle" alt="">
-                    <h4>A</h4>
-                    <p class="text-muted">Info</p>
-                    <!-- Modal Button -->
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModalNew1">More Info</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="team-member">
-                    <img src="img/team/1.png" class="img-responsive img-circle" alt="">
-                    <h4>B</h4>
-                    <p class="text-muted">Info</p>
-                    <!-- Modal Button -->
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModalNew2">More Info</button>
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
 <!-- Modals -->
-<!-- Modals for existing members -->
+<!-- Kürşat Çağıltay -->
 <div class="modal fade" id="teamMemberModal0" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel0" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content modal-black">
@@ -95,7 +76,7 @@
     </div>
 </div>
 
-<!-- Modals for new members -->
+<!-- Bilgehan Çağıltay -->
 <div class="modal fade" id="teamMemberModal1" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel1" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content modal-black">
@@ -116,12 +97,13 @@
     </div>
 </div>
 
+<!-- Faraz Badali Naghadeh -->
 <div class="modal fade" id="teamMemberModal2" tabindex="-1" role="dialog" aria-labelledby="teamMemberModalLabel2" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content modal-black">
             <div class="modal-header">
                 <h5 class="modal-title" id="teamMemberModalLabel2">Faraz Badali Naghadeh</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" the="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
