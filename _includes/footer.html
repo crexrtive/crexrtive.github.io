@@ -1,4 +1,80 @@
-  <footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Dark background */
+            color: #fff; /* White text color */
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center; /* Center the title and description */
+            padding: 50px 20px;
+        }
+        .year-section {
+            margin-bottom: 40px;
+        }
+        .year-title {
+            font-size: 24px;
+            color: #ccc; /* Light gray color */
+            margin-bottom: 20px;
+            text-align: center; /* Center the year titles */
+            text-transform: capitalize; /* Capitalize each word */
+        }
+        .publication {
+            padding: 20px;
+            background-color: #444; /* Light gray background */
+            margin-bottom: 20px;
+            border-radius: 8px; /* Rounded corners */
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Slight shadow */
+        }
+        .bullet {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #fff; /* White dot */
+            margin-right: 20px;
+        }
+        h1, h2, h4 {
+            text-transform: capitalize; /* Capitalize the first letter of each word */
+        }
+        h4 {
+            margin: 0 0 5px 0;
+            font-size: 1.5em;
+        }
+        p {
+            margin: 0;
+        }
+        .more-info {
+            color: #1e90ff; /* Light blue color */
+            cursor: pointer;
+            text-decoration: underline;
+            margin-top: 5px;
+        }
+        footer {
+            background-color: #333; /* Gri arka plan */
+            color: #fff; /* Beyaz metin rengi */
+        }
+    </style>
+</head>
+<body>
+    <!-- Sayfanızın içeriği burada yer alacak -->
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -7,19 +83,21 @@
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
+                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a></li>
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Bootstrap and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
