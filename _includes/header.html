@@ -68,12 +68,16 @@
     overflow: hidden; /* Resimlerin belirlenen yükseklik dışına çıkmasını engeller */
   }
 
-  /* Mobilde navbarı gizler */
+  /* Mobilde navbar bağlantılarını gizler, ancak arka plan ve logo görünür */
   @media (max-width: 768px) {
-    .navbar {
-        display: none;
+    .navbar-collapse {
+        display: none; /* Bağlantıları gizler */
     }
-  }
+    .navbar-header {
+        width: 100%; /* Logoyu merkeze alır */
+        text-align: center;
+    }
+}
 </style>
 
 <!-- Carousel -->
