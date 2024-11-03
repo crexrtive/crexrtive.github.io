@@ -67,8 +67,20 @@
         display: none; /* Bağlantıları ve hamburger menü butonunu gizler */
     }
     .navbar-header {
-        width: 100%; /* Logoyu merkeze alır */
-        text-align: center;
+        width: 100%; /* Navbar başlığını tam genişlikte yapar */
+        text-align: center; /* Logoyu ortalar */
+    }
+    .navbar-brand img {
+        margin: 0 auto; /* Mobilde logoyu merkeze alır */
+    }
+
+    /* Carousel boyutunu mobilde daha büyük yapar */
+    #hciLabCarousel .carousel-inner .item {
+        height: 400px; /* Mobilde carousel yüksekliğini artırır */
+    }
+    #hciLabCarousel .carousel-inner .item img {
+        object-fit: cover; /* Görselin taşmasını engeller ve alanı kaplamasını sağlar */
+        height: 100%; /* Görseli carouselin yüksekliğine uyarlar */
     }
 }
 </style>
