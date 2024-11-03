@@ -72,6 +72,8 @@
     }
     .navbar-brand img {
         margin: 0 auto; /* Mobilde logoyu merkeze alır */
+        position: relative;
+        left: 10px; /* Logoyu biraz sağa kaydırır */
     }
 
     /* Carousel boyutunu mobilde daha büyük yapar */
@@ -81,6 +83,7 @@
     #hciLabCarousel .carousel-inner .item img {
         object-fit: cover; /* Görselin taşmasını engeller ve alanı kaplamasını sağlar */
         height: 100%; /* Görseli carouselin yüksekliğine uyarlar */
+        width: auto; /* Genişliğini korur ve sadece yüksekliğe göre kırpar */
     }
 }
 </style>
