@@ -1,57 +1,123 @@
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: black;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span the="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Logo Resmi Buraya Eklendi -->
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <img src="{{ '/img/suhci2.png' | prepend: site.baseurl }}" alt="creXRtive" style="height: auto; width: 200px; margin-top: -35px;">
+            </a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#aboutHCI" style="color: white;">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#portfolio" style="color: white;">Projects</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about" style="color: white;">Publications</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team" style="color: white;">Team</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact" style="color: white;">Contact</a>
+                </li>
+            </ul>
         </div>
-    </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<style>
+  /* Carousel kontrol elemanlarının pozisyon ve boyut düzenlemeleri */
+  .carousel-control.left, .carousel-control.right {
+    top: 50%; /* Okların dikey olarak ortalanmasını sağlar */
+    transform: translateY(-50%); /* Yatayda merkeze alır */
+    z-index: 2; /* Diğer içeriklerin üzerinde görünmesini sağlar */
+  }
+
+  /* Carousel oklarının genişliği ve simge boyutu ayarları */
+  .carousel-control {
+    width: 5%; /* Okların genişliğini azaltır */
+    font-size: 20px; /* İkon boyutunu küçültür */
+  }
+
+  /* Carousel görsellerinin boyutlarını kontrol etmek için ek stiller */
+  .carousel-inner .item img {
+    width: 100%;  /* Genişliği sayfa genişliğine uyarlar */
+    height: auto; /* Yüksekliği orijinal en-boy oranını koruyarak ayarlar */
+    max-height: 800px; /* Maksimum yüksekliği sınırlar */
+  }
+
+  .carousel-inner {
+    overflow: hidden; /* Resimlerin belirlenen yükseklik dışına çıkmasını engeller */
+  }
+</style>
+
+
+<!-- Carousel -->
+<div id="hciLabCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#hciLabCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#hciLabCarousel" data-slide-to="1"></li>
+        <li data-target="#hciLabCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+<!-- Carousel -->
+<div id="hciLabCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#hciLabCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#hciLabCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/dd.png" alt="Image 1">
+        </div>
+        <div class="item">
+            <img src="img/ggg.png" alt="Image 2">
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#hciLabCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#hciLabCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span the="sr-only"></span>
+    </a>
+</div>
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#hciLabCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#hciLabCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span the="sr-only"></span>
+    </a>
+</div>
