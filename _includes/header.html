@@ -102,14 +102,17 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
+        // Navbar toggle butonuna basıldığında menüyü açıp kapatır
         $('.navbar-toggle').on('click', function () {
             $('#bs-example-navbar-collapse-1').collapse('toggle');
         });
-        // Menüde bir bağlantıya tıklandığında otomatik olarak kapanmasını sağla
+        
+        // Menüde bir bağlantıya tıklandığında menüyü tamamen kapatır
         $('.navbar-nav li a').on('click', function() {
-            if ($('.navbar-toggle').is(':visible')) {
+            if ($('.navbar-toggle').is(':visible') && $('#bs-example-navbar-collapse-1').hasClass('in')) {
                 $('#bs-example-navbar-collapse-1').collapse('hide');
             }
         });
     });
 </script>
+
