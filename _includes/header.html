@@ -3,13 +3,6 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- Logo Resmi Buraya Eklendi -->
             <a class="navbar-brand page-scroll" href="#page-top">
                 <img src="{{ '/img/suhci2.png' | prepend: site.baseurl }}" alt="creXRtive" style="height: auto; width: 200px; margin-top: -35px;">
             </a>
@@ -68,10 +61,10 @@
     overflow: hidden; /* Resimlerin belirlenen yükseklik dışına çıkmasını engeller */
   }
 
-  /* Mobilde navbar bağlantılarını gizler, ancak arka plan ve logo görünür */
+  /* Mobilde navbar bağlantılarını ve hamburger menü butonunu gizler, ancak arka plan ve logo görünür */
   @media (max-width: 768px) {
-    .navbar-collapse {
-        display: none; /* Bağlantıları gizler */
+    .navbar-collapse, .navbar-toggle {
+        display: none; /* Bağlantıları ve hamburger menü butonunu gizler */
     }
     .navbar-header {
         width: 100%; /* Logoyu merkeze alır */
