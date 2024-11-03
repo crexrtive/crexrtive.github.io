@@ -73,17 +73,19 @@
     .navbar-brand img {
         margin: 0 auto; /* Mobilde logoyu merkeze alır */
         position: relative;
-        left: 10px; /* Logoyu biraz sağa kaydırır */
+        left: 50px; /* Logoyu daha sağa kaydırır */
     }
 
-    /* Carousel boyutunu mobilde daha büyük yapar */
+    /* Carousel boyutunu mobilde daha büyük yapar ve genişlikten kırpar */
     #hciLabCarousel .carousel-inner .item {
         height: 400px; /* Mobilde carousel yüksekliğini artırır */
     }
     #hciLabCarousel .carousel-inner .item img {
         object-fit: cover; /* Görselin taşmasını engeller ve alanı kaplamasını sağlar */
         height: 100%; /* Görseli carouselin yüksekliğine uyarlar */
-        width: auto; /* Genişliğini korur ve sadece yüksekliğe göre kırpar */
+        width: auto; /* Genişliğini korur */
+        max-width: 90%; /* Genişliği %90 ile sınırlandırarak sağdan ve soldan kırpar */
+        margin: 0 auto; /* Görseli ortalar */
     }
 }
 </style>
@@ -116,3 +118,4 @@
         <span class="sr-only"></span>
     </a>
 </div>
+
