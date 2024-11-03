@@ -6,7 +6,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
-                <span the="icon-bar"></span>
+                <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <!-- Logo Resmi Buraya Eklendi -->
@@ -43,7 +43,6 @@
     <!-- /.container-fluid -->
 </nav>
 
-
 <style>
   /* Carousel kontrol elemanlarının pozisyon ve boyut düzenlemeleri */
   .carousel-control.left, .carousel-control.right {
@@ -68,19 +67,15 @@
   .carousel-inner {
     overflow: hidden; /* Resimlerin belirlenen yükseklik dışına çıkmasını engeller */
   }
+
+  /* Mobilde navbarı gizler */
+  @media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+  }
 </style>
 
-
-<!-- Carousel -->
-<div id="hciLabCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#hciLabCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#hciLabCarousel" data-slide-to="1"></li>
-        <li data-target="#hciLabCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
 <!-- Carousel -->
 <div id="hciLabCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -106,18 +101,6 @@
     </a>
     <a class="right carousel-control" href="#hciLabCarousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
-        <span the="sr-only"></span>
-    </a>
-</div>
-
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#hciLabCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
         <span class="sr-only"></span>
-    </a>
-    <a class="right carousel-control" href="#hciLabCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span the="sr-only"></span>
     </a>
 </div>
