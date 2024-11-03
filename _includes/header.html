@@ -1,20 +1,14 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top" style="background-color: black;">
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- Brand logo, sola hizalanmış -->
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
             <a class="navbar-brand page-scroll" href="#page-top">
                 <img src="{{ '/img/suhci2.png' | prepend: site.baseurl }}" alt="creXRtive" style="height: auto; width: 200px; margin-top: -35px;">
             </a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Nav links, yalnızca geniş ekranlarda görünecek şekilde ayarlandı -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
@@ -67,16 +61,19 @@
     overflow: hidden; /* Resimlerin belirlenen yükseklik dışına çıkmasını engeller */
   }
 
-  /* Mobilde navbar bağlantılarını ve hamburger menü butonunu göster */
+  /* Mobilde navbar bağlantılarını gizler, ancak arka plan ve logo görünür */
   @media (max-width: 768px) {
+    .navbar-collapse, .navbar-toggle {
+        display: none; /* Bağlantıları ve hamburger menü butonunu gizler */
+    }
     .navbar-header {
-        width: 100%; /* Navbar başlığını tam genişlikte yapar */
-        text-align: center; /* Logoyu ortalar */
+        width: auto; /* Navbar başlığını sola hizalar */
+        text-align: left; /* Logoyu sola hizalar */
     }
     .navbar-brand img {
-        margin: 0 auto; /* Mobilde logoyu merkeze alır */
+        margin-left: 0; /* Logoyu sola hizalar */
         position: relative;
-        left: 10px; /* Logoyu biraz sağa kaydırır */
+        left: 0; /* Logoyu sol kenara yaklaştırır */
     }
 
     /* Carousel boyutunu mobilde daha büyük yapar */
@@ -90,24 +87,6 @@
     }
 }
 </style>
-
-<!-- jQuery ve JavaScript kodları -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $(document).ready(function () {
-        // Navbar toggle butonuna basıldığında menüyü açıp kapatır
-        $('.navbar-toggle').on('click', function () {
-            $('#bs-example-navbar-collapse-1').collapse('toggle');
-        });
-        
-        // Menüde bir bağlantıya tıklandığında menüyü tamamen kapatır
-        $('.navbar-nav li a').on('click', function() {
-            if ($('.navbar-toggle').is(':visible') && $('#bs-example-navbar-collapse-1').hasClass('in')) {
-                $('#bs-example-navbar-collapse-1').collapse('hide');
-            }
-        });
-    });
-</script>
 
 <!-- Carousel -->
 <div id="hciLabCarousel" class="carousel slide" data-ride="carousel">
