@@ -3,6 +3,12 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand page-scroll" href="#page-top">
                 <img src="{{ '/img/suhci2.png' | prepend: site.baseurl }}" alt="creXRtive" style="height: auto; width: 200px; margin-top: -35px;">
             </a>
@@ -61,11 +67,8 @@
     overflow: hidden; /* Resimlerin belirlenen yükseklik dışına çıkmasını engeller */
   }
 
-  /* Mobilde navbar bağlantılarını ve hamburger menü butonunu gizler, ancak arka plan ve logo görünür */
+  /* Mobilde navbar bağlantılarını ve hamburger menü butonunu göster */
   @media (max-width: 768px) {
-    .navbar-collapse, .navbar-toggle {
-        display: none; /* Bağlantıları ve hamburger menü butonunu gizler */
-    }
     .navbar-header {
         width: 100%; /* Navbar başlığını tam genişlikte yapar */
         text-align: center; /* Logoyu ortalar */
@@ -83,10 +86,28 @@
     #hciLabCarousel .carousel-inner .item img {
         object-fit: cover; /* Görselin taşmasını engeller ve alanı kaplamasını sağlar */
         height: 100%; /* Görseli carouselin yüksekliğine uyarlar */
-        width: auto; /* Genişliğini korur ve sadece yüksekliğe göre kırpar */
+        width: auto; /* Genişliği korur ve sadece yüksekliğe göre kırpar */
     }
 }
 </style>
+
+<!-- jQuery ve JavaScript kodları -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Navbar toggle butonuna basıldığında menüyü açıp kapatır
+        $('.navbar-toggle').on('click', function () {
+            $('#bs-example-navbar-collapse-1').collapse('toggle');
+        });
+        
+        // Menüde bir bağlantıya tıklandığında menüyü tamamen kapatır
+        $('.navbar-nav li a').on('click', function() {
+            if ($('.navbar-toggle').is(':visible') && $('#bs-example-navbar-collapse-1').hasClass('in')) {
+                $('#bs-example-navbar-collapse-1').collapse('hide');
+            }
+        });
+    });
+</script>
 
 <!-- Carousel -->
 <div id="hciLabCarousel" class="carousel slide" data-ride="carousel">
