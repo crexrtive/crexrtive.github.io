@@ -1,34 +1,3 @@
-<!-- Include Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-<!-- Custom CSS -->
-<style>
-    /* Yalnızca modallar için geçerli olacak siyah arka plan ve beyaz metin */
-    .modal-black .modal-content {
-        background-color: #000 !important;
-        color: #fff !important;
-    }
-    .modal-black .modal-header {
-        border-bottom: 1px solid #444 !important;
-    }
-    .modal-black .modal-footer {
-        border-top: 1px solid #444 !important;
-    }
-    /* Sadece modaldaki "More Info" butonları için koyu renk */
-    .modal-black .btn-dark {
-        background-color: #000 !important;
-        border-color: #000 !important;
-        color: #fff !important;
-    }
-    .modal-black .btn-dark:hover {
-        background-color: #444 !important;
-        border-color: #444 !important;
-        color: #fff !important;
-    }
-</style>
-
 <!-- Team Section -->
 <section id="team" class="bg-light-gray">
     <div class="container">
@@ -73,7 +42,7 @@
             <div class="col-md-3 text-center">
                 <div class="team-member">
                     <img src="img/team/6.png" class="img-responsive img-circle" alt="">
-                    <h4>Faraz Badali Naghadeh</h4>
+                    <h4>Faraz Badali Naghadeh </h4>
                     <!-- Modal Button -->
                     <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal3">More Info</button>
                 </div>
@@ -87,6 +56,42 @@
                 </div>
             </div>
         </div>
+
+<!-- Third Row: Four Members Centered -->
+<div class="row justify-content-center">
+    <div class="col-md-3 text-center">
+        <div class="team-member">
+            <img src="img/team/5.png" class="img-responsive img-circle" alt="">
+            <h4>İdil Kale</h4>
+            <!-- Modal Button -->
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal5">More Info</button>
+        </div>
+    </div>
+    <div class="col-md-3 text-center">
+        <div class="team-member">
+            <img src="img/team/9.png" class="img-responsive img-circle" alt="">
+            <h4>Selahattin Alp Özer</h4>
+            <!-- Modal Button -->
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal6">More Info</button>
+        </div>
+    </div>
+    <div class="col-md-3 text-center">
+        <div class="team-member">
+            <img src="img/team/7.png" class="img-responsive img-circle" alt="">
+            <h4>Barış Aygen</h4>
+            <!-- Modal Button -->
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal7">More Info</button>
+        </div>
+    </div>
+    <div class="col-md-3 text-center">
+        <div class="team-member">
+            <img src="img/team/10.png" class="img-responsive img-circle" alt="">
+            <h4>Pelin Karadal</h4>
+            <!-- Modal Button -->
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#teamMemberModal8">More Info</button>
+        </div>
+    </div>
+</div>
 
 
 <!-- Modals (Example for Kürşat Çağıltay) -->
@@ -160,7 +165,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p>My name is Baris Aygen. I graduated from Sabanci University in 2024 with a degree in Computer Science and Engineering, and I am currently pursuing my Master's at the same institution. Alongside my studies, I work as a technical assistant at the university and contribute to a TUBITAK project under the supervision of Kursat Cagiltay. My primary research area is developing virtual reality environments in Unity with a strong emphasis on usability, guided by human-computer interaction principles.</p>
+                <p>Baris Aygen obtained a degree in Computer Science and Engineering from Sabancı University in 2024, and a Master's is currently being pursued at the same institution. Alongside these studies, contributions are made as a teaching assistant at the university and to a TUBITAK project under the supervision of Kursat Cagiltay. The primary research focus involves the development of virtual reality environments in Unity, with an emphasis on usability informed by principles of human-computer interaction.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -232,6 +237,29 @@
 
 
 
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
-
+<!-- Custom CSS -->
+<style>
+    .modal-black .modal-content {
+        background-color: #000;
+        color: #fff;
+    }
+    .modal-black .modal-header {
+        border-bottom: 1px solid #444;
+    }
+    .modal-black .modal-footer {
+        border-top: 1px solid #444;
+    }
+    .btn-dark {
+        background-color: #000;
+        border-color: #000;
+    }
+    .btn-dark:hover {
+        background-color: #444;
+        border-color: #444;
+    }
+</style>
