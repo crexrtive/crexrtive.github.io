@@ -1,102 +1,87 @@
-<!-- Navigation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
 <nav class="navbar navbar-default navbar-fixed-top" style="background-color: black;">
     <div class="container">
-        <!-- Brand logo, sola hizalanmış -->
         <div class="navbar-header page-scroll">
             <a class="navbar-brand page-scroll" href="#page-top">
                 <img src="{{ '/img/suhci2.png' | prepend: site.baseurl }}" alt="creXRtive" style="height: auto; width: 200px; margin-top: -35px;">
             </a>
         </div>
 
-        <!-- Nav links, yalnızca geniş ekranlarda görünecek şekilde ayarlandı -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#aboutHCI" style="color: white;">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#portfolio" style="color: white;">Projects</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#about" style="color: white;">Publications</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#team" style="color: white;">Team</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact" style="color: white;">Contact</a>
-                </li>
+                <li class="hidden"><a href="#page-top"></a></li>
+                <li><a class="page-scroll" href="#aboutHCI" style="color: white;">About</a></li>
+                <li><a class="page-scroll" href="#portfolio" style="color: white;">Projects</a></li>
+                <li><a class="page-scroll" href="#about" style="color: white;">Publications</a></li>
+                <li><a class="page-scroll" href="#team" style="color: white;">Team</a></li>
+                <li><a class="page-scroll" href="#contact" style="color: white;">Contact</a></li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
 </nav>
 
 <style>
-  /* Carousel kontrol elemanlarının pozisyon ve boyut düzenlemeleri */
   .carousel-control.left, .carousel-control.right {
-    top: 50%; /* Okların dikey olarak ortalanmasını sağlar */
-    transform: translateY(-50%); /* Yatayda merkeze alır */
-    z-index: 2; /* Diğer içeriklerin üzerinde görünmesini sağlar */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
   }
 
-  /* Carousel oklarının genişliği ve simge boyutu ayarları */
   .carousel-control {
-    width: 5%; /* Okların genişliğini azaltır */
-    font-size: 20px; /* İkon boyutunu küçültür */
+    width: 5%;
+    font-size: 20px;
   }
 
-  /* Carousel görsellerinin boyutlarını kontrol etmek için ek stiller */
   .carousel-inner .item img {
-    width: 100%;  /* Genişliği sayfa genişliğine uyarlar */
-    height: auto; /* Yüksekliği orijinal en-boy oranını koruyarak ayarlar */
-    max-height: 800px; /* Maksimum yüksekliği sınırlar */
+    width: 100%;
+    height: auto;
+    max-height: 800px;
   }
 
   .carousel-inner {
-    overflow: hidden; /* Resimlerin belirlenen yükseklik dışına çıkmasını engeller */
+    overflow: hidden;
   }
 
-  /* Mobilde navbar bağlantılarını gizler, ancak arka plan ve logo görünür */
   @media (max-width: 768px) {
     .navbar-collapse, .navbar-toggle {
-        display: none; /* Bağlantıları ve hamburger menü butonunu gizler */
+        display: none;
     }
     .navbar-header {
-        width: auto; /* Navbar başlığını sola hizalar */
-        text-align: left; /* Logoyu sola hizalar */
+        width: auto;
+        text-align: left;
     }
     .navbar-brand img {
-        margin-left: -20px; /* Logoyu daha sola yaklaştırır */
+        margin-left: -20px;
         position: relative;
-        left: 0; /* Logoyu sol kenara yaklaştırır */
+        left: 0;
     }
 
-    /* Carousel boyutunu mobilde daha büyük yapar */
     #hciLabCarousel .carousel-inner .item {
-        height: 400px; /* Mobilde carousel yüksekliğini artırır */
+        height: 400px;
     }
     #hciLabCarousel .carousel-inner .item img {
-        object-fit: cover; /* Görselin taşmasını engeller ve alanı kaplamasını sağlar */
-        height: 100%; /* Görseli carouselin yüksekliğine uyarlar */
-        width: auto; /* Genişliği korur ve sadece yüksekliğe göre kırpar */
+        object-fit: cover;
+        height: 100%;
+        width: auto;
     }
-}
+  }
 </style>
 
-<!-- Carousel -->
 <div id="hciLabCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#hciLabCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#hciLabCarousel" data-slide-to="1"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
             <img src="img/dd.png" alt="Image 1">
@@ -106,7 +91,6 @@
         </div>
     </div>
 
-    <!-- Left and right controls -->
     <a class="left carousel-control" href="#hciLabCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
         <span class="sr-only"></span>
@@ -116,3 +100,9 @@
         <span class="sr-only"></span>
     </a>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
