@@ -82,6 +82,20 @@
             text-decoration: none; /* Alt çizgiyi kaldır */
             opacity: 0.8; /* Hover ve focus durumunda hafif saydamlık ekle */
         }
+
+        /* Özel stil: First Draft başlığı için */
+        .draft-title {
+            text-transform: uppercase; /* Tamamen büyük harf */
+            margin-top: 30px; /* Biraz aşağı itmek için boşluk ekle */
+        }
+
+        /* Video boyutu ayarı */
+        .sage-video {
+            width: 50%; /* Videoyu yarı boyutta göster */
+            height: auto;
+            display: block;
+            margin: 20px auto; /* Ortalamak için otomatik kenar boşluğu */
+        }
     </style>
 </head>
 <body>
@@ -183,6 +197,13 @@
             </div>
             <div class="modal-body">
                 <p>The main objective of the SAGE project is to design, develop, and evaluate a Virtual Reality (VR) editor system that is user-friendly, does not require technical knowledge, can be used with mobile devices, integrates with LMS, and is cloud-based for teachers to create rich learning environments. The system will be easy to use, cost-effective for both teachers and students, available in the Turkish language, and tailored to the Turkish education system.</p>
+               
+                <!-- Başlık ve Video Ekleme -->
+                <h4 class="draft-title">FIRST DRAFT</h4>
+                <video class="sage-video" controls>
+                    <source src="img/Sage.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
